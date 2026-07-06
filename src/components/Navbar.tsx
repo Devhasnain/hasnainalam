@@ -29,6 +29,7 @@ const Navbar = ({ className }: Props) => {
                   height={250}
                   width={250}
                   loading="eager"
+                  priority
                 />
               </Link>
             </div>
@@ -48,7 +49,7 @@ const Navbar = ({ className }: Props) => {
 
             <div className="hidden md:flex items-center space-x-4">
               <Link
-                href="#contact"
+                href="/contact"
                 className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold text-white rounded-xl group bg-linear-to-br from-blue-500 to-cyan-400 hover:text-white focus:ring-2 focus:outline-none focus:ring-blue-800"
               >
                 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#080b13] rounded-xl group-hover:bg-opacity-0">
@@ -104,7 +105,7 @@ const Navbar = ({ className }: Props) => {
             ))}
             <div className="pt-4 border-t border-gray-900">
               <Link 
-                href="#contact"
+                href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block text-center w-full py-3 bg-linear-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-sm hover:from-blue-500 hover:to-cyan-400 transition-colors"
               >

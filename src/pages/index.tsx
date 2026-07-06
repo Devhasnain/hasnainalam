@@ -41,7 +41,7 @@ const Home = ({ posts, projects }: Props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://portfolio-cms.huefinds.store/" />
+        <link rel="canonical" href="https://hasnainalam.com" />
 
         {/* Open Graph */}
         <meta
@@ -57,14 +57,14 @@ const Home = ({ posts, projects }: Props) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content="https://portfolio-cms.huefinds.store/"
+          content="https://hasnainalam.com/"
         />
         <meta property="og:site_name" content="Hasnain Alam Portfolio" />
         <meta property="og:locale" content="en_US" />
 
         <meta
           property="og:image"
-          content="https://portfolio-cms.huefinds.store/og-image.png"
+          content="https://hasnainalam.com/Hasnain-alam-og-image.png"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -85,7 +85,7 @@ const Home = ({ posts, projects }: Props) => {
         />
         <meta
           name="twitter:image"
-          content="https://portfolio-cms.huefinds.store/og-image.png"
+          content="https://hasnainalam.com/Hasnain-alam-og-image.png"
         />
 
         {/* Theme */}

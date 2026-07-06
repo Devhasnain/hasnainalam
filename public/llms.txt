@@ -1,0 +1,43 @@
+# Hasnain Alam
+
+> Hasnain Alam is a Full-Stack Software Engineer specializing in the MERN Stack, Next.js, TypeScript, React Native, and Electron.js. He builds high-performance web applications, cross-platform mobile apps, and native desktop software for clients worldwide.
+
+Hasnain Alam is a multi-platform developer focused on production-ready, scalable applications across three core domains: web (MERN Stack & Next.js), mobile (React Native), and desktop (Electron.js). He is available for freelance projects, remote engagements, and long-term consultations.
+
+## About
+
+- [About Hasnain Alam](https://hasnainalam.com/about): Background, professional mission, technical philosophy, and core multi-platform framework breakdown (Web, Mobile, Desktop).
+
+## Services
+
+- [Services Overview](https://hasnainalam.com/services): Full list of development services offered.
+- [MERN Stack Development](https://hasnainalam.com/services/mern-stack-development): Full-stack web applications using MongoDB, Express, React & Node.js — custom APIs, database design, authentication, and deployment.
+- [React Native App Development](https://hasnainalam.com/services/react-native-development): Cross-platform mobile apps for iOS & Android from a single codebase, including native device integrations and app store deployment.
+- [Electron.js Desktop App Development](https://hasnainalam.com/services/electron-desktop-development): Cross-platform desktop applications for Windows, macOS & Linux with native OS integration and offline support.
+
+## Projects
+
+- [Projects](https://hasnainalam.com/projects): Portfolio of completed web, mobile, and desktop applications built with MERN Stack, Next.js, React Native, and Electron.js. Each project has its own detail page at /projects/[project-slug].
+
+## Blog
+
+- [Blog](https://hasnainalam.com/blog): Technical articles and tutorials on full-stack development, MERN Stack, Next.js, React Native, Electron.js, and software architecture. Each post has its own detail page at /blog/[post-slug].
+
+## Contact
+
+- [Contact](https://hasnainalam.com/contact): Get in touch for freelance, remote, or full-time software engineering projects. Direct email and project inquiry form available.
+
+## Tech Stack
+
+- **Web**: Next.js, React.js, Node.js, Express.js, MongoDB, PostgreSQL, TypeScript, Tailwind CSS
+- **Mobile**: React Native, Expo, Firebase
+- **Desktop**: Electron.js
+- **Other**: REST APIs, GraphQL, JWT Authentication, Third-party API integrations
+
+## Contact Information
+
+- Email: contact@hasnainalam.com
+- Website: https://hasnainalam.com
+- GitHub: https://github.com/devhasnain
+- LinkedIn: https://www.linkedin.com/in/devhasnain
+- Fiverr: https://fiverr.com/hasnainalam462

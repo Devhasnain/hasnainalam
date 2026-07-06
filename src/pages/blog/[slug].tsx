@@ -66,14 +66,13 @@ const BlogDetail = ({ post }: Props) => {
 
         <link rel="icon" href="/favicon.png" />
 
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </Head>
 
-      <main className="min-h-screen pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto z-10 relative">
+      <div className="min-h-screen pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto z-10 relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-125 h-125 bg-blue-500/5 rounded-full blur-[150px] pointer-events-none -z-10" />
 
         <article className="space-y-8">
@@ -154,7 +153,7 @@ const BlogDetail = ({ post }: Props) => {
             </Link>
           </footer>
         </article>
-      </main>
+      </div>
     </>
   );
 };

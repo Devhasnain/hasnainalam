@@ -46,13 +46,13 @@ const Blog = ({ posts }: Props) => {
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${domain}/Hasnain-alam.png`} />
+        <meta property="og:image" content={`${domain}/Hasnain-alam-og-image.png`} />
         <meta property="og:site_name" content="Hasnain Alam Portfolio" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`${domain}/Hasnain-alam.png`} />
+        <meta name="twitter:image" content={`${domain}/Hasnain-alam-og-image.png`} />
         <link rel="icon" href="/favicon.png" />
 
         <script
