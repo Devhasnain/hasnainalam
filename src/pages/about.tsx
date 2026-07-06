@@ -20,7 +20,18 @@ export default function AboutPage() {
     description,
     isPartOf: { "@id": `${domain}/#website` },
     mainEntity: {
+      "@type": "Person",
       "@id": `${domain}/#person`,
+      name: "Hasnain Alam",
+      url: domain,
+      image: `${domain}/Hasnain-alam.png`,
+      jobTitle: "Full-Stack MERN Developer",
+      description:
+        "Full-Stack Developer specializing in MERN Stack, Next.js, React Native, Electron.js, NestJS, TypeScript, Node.js and MongoDB.",
+      sameAs: [
+        "https://github.com/devhasnain",
+        "https://www.linkedin.com/in/devhasnain",
+      ],
     },
   };
 
