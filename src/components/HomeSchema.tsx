@@ -125,21 +125,19 @@ export default function HomeSchema() {
         "Portfolio showcasing skills, services, projects, blogs and contact information of Full-Stack Developer Hasnain Alam.",
     },
 
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "@id": `${domain}/#faq`,
-        mainEntity: faqsData.map((faq) => ({
-          "@type": "Question",
-          name: faq.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
-      },
-    ],
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${domain}/#faq`,
+      mainEntity: faqsData.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
   ];
 
   return (
