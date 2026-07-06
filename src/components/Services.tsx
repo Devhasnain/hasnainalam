@@ -1,22 +1,21 @@
 import { Monitor, Smartphone, MonitorSmartphone } from "lucide-react";
-import { motion } from "framer-motion";
 
 
 const services = [
   {
     title: "Web Application Development",
-    desc: "Crafting highly scalable, SEO-friendly web apps using Next.js, TypeScript, and Tailwind CSS with pristine performance architectures.",
-    icon: <Monitor/>,
+    desc: "Building scalable, SEO-friendly web applications with the MERN Stack, Next.js, TypeScript, and Tailwind CSS — engineered for pristine performance and search visibility.",
+    icon: <Monitor aria-hidden="true" />,
   },
   {
     title: "Mobile App Development",
-    desc: "Building native iOS and Android apps with React Native, leveraging fluid animations and native feature integrations.",
-    icon: <Smartphone/>,
+    desc: "Building native iOS and Android apps with React Native, leveraging fluid animations and native device feature integrations.",
+    icon: <Smartphone aria-hidden="true" />,
   },
   {
     title: "Cross-Platform Desktop Apps",
-    desc: "Developing powerful enterprise desktop software with Electron.js, ensuring optimized native OS level compatibility.",
-    icon: <MonitorSmartphone/>,
+    desc: "Developing powerful cross-platform desktop software with Electron.js, ensuring optimized native OS-level compatibility and performance.",
+    icon: <MonitorSmartphone aria-hidden="true" />,
   },
 ];
 
@@ -36,8 +35,9 @@ export default function Services() {
           Services I Deliver
         </h2>
         <p className="text-gray-500 text-base max-w-2xl mx-auto mt-4 font-light">
-          End-to-end engineered digital capabilities with zero performance
-          bottlenecks, enterprise-grade safety, and seamless UI interfaces.
+          End-to-end MERN Stack, React Native, and Electron.js development —
+          engineered for performance, scalability, and seamless user
+          experience.
         </p>
       </div>
 

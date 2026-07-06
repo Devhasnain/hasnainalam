@@ -1,5 +1,4 @@
 import { BrushCleaning, Zap, Target, Workflow } from "lucide-react";
-import React from "react";
 
 
 const About = () => {
@@ -23,19 +22,23 @@ const About = () => {
           </h2>
 
           <p className="text-gray-400 leading-relaxed font-light">
-            Main ek specialized multi-platform developer hun jo hardware-level
-            desktop platforms se lekar dynamic search-optimized global platforms
-            tak har kism ki applications code karne ka tajruba rakhta hai. MERN
-            stack application systems likhne ke sath, React Native framework ke
-            sath real-world robust cross-platform mobile systems aur Electron.js
-            application configurations likhna meri core expertise hai.
+            I&apos;m a specialized Full-Stack Developer with hands-on experience
+            building everything from hardware-level desktop software to dynamic,
+            search-optimized web platforms. Alongside developing scalable
+            applications with the{" "}
+            <span className="text-white font-medium">MERN Stack</span>, my core
+            expertise includes building robust, real-world cross-platform mobile
+            apps with{" "}
+            <span className="text-white font-medium">React Native</span> and
+            secure, native desktop applications with{" "}
+            <span className="text-white font-medium">Electron.js</span>.
           </p>
 
           <p className="text-gray-400 leading-relaxed font-light">
-            Mera basic focus aisi application state management deliver karna
-            hota hai jo minimum processing overheads ke sath users ko
-            pixel-perfect interactive UI components responsive frames ke sath
-            explore karne ka chance de.
+            My primary focus is delivering efficient application state
+            management with minimal processing overhead, giving users
+            pixel-perfect, interactive UI components within fully responsive
+            layouts.
           </p>
 
           {/* Micro Stats Columns */}
@@ -71,19 +74,19 @@ const About = () => {
         <div className="lg:col-span-5 grid grid-cols-2 gap-4">
           <div className="bg-gray-950/60 border border-gray-900 p-6 rounded-2xl space-y-3">
             <div className="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold text-lg">
-              <BrushCleaning/>
+              <BrushCleaning />
             </div>
             <h3 className="text-base font-semibold text-white">
               Clean Architecture
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Maintainable, testable system code for long-term scalability
+              Maintainable, testable code built for long-term scalability
               without structural fragmentation.
             </p>
           </div>
           <div className="bg-gray-950/60 border border-gray-900 p-6 rounded-2xl space-y-3 mt-4">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 font-bold text-lg">
-              <Zap/>
+              <Zap />
             </div>
             <h3 className="text-base font-semibold text-white">
               Performance Tuning
@@ -95,14 +98,14 @@ const About = () => {
           </div>
           <div className="bg-gray-950/60 border border-gray-900 p-6 rounded-2xl space-y-3">
             <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold text-lg">
-              <Target/>
+              <Target />
             </div>
             <h3 className="text-base font-semibold text-white">
               SEO Driven Focus
             </h3>
             <p className="text-gray-400 leading-relaxed">
               Leveraging SSR frameworks like Next.js for precise crawling
-              layouts and rich rich snippets.
+              structures and rich search snippets.
             </p>
           </div>
           <div className="bg-gray-950/60 border border-gray-900 p-6 rounded-2xl space-y-3 mt-4">

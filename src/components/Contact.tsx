@@ -27,14 +27,14 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Contact Details Column */}
-          <div className="lg:col-span-5 space-y-6">
+        <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center space-x-3">
               <span className="text-blue-500 font-semibold tracking-widest text-xs uppercase">Contact Core</span>
               <div className="w-8 h-1px bg-blue-500" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Let&apos;s Architect Your Vision</h2>
             <p className="text-gray-400 leading-relaxed font-light">
-              Aapko apne startup, product prototype, mobile interfaces, ya hardware desktop integration systems par discussion karni ho? Details share kijiye taaki hum efficient performance metrics ke sath build shuru kar saken.
+              Have a startup idea, product prototype, mobile interface, or desktop integration system you&apos;d like to discuss? Share your project details and let&apos;s start building with efficient, production-ready performance in mind.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -72,7 +72,7 @@ export default function Contact() {
                 <div className="w-16 h-16 bg-blue-500/15 text-blue-400 rounded-full flex items-center justify-center text-2xl mb-4">✓</div>
                 <h3 className="text-xl font-bold text-white">System Handshake Completed!</h3>
                 <p className="text-gray-400 text-sm max-w-sm mt-2 leading-relaxed">
-                  Aapka message pipeline mein save ho chuka hai. Main agle 24 hours ke andar contact coordinates verify karke revert back karunga.
+                 Your message has been received. I'll review the details and get back to you within 24 hours.
                 </p>
               </div>
             ) : null}

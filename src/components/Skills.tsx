@@ -22,10 +22,10 @@ const Skills = () => {
               My Tactical Stack Proficiency
             </h2>
             <p className="text-gray-400 leading-relaxed font-light">
-              Mera core target aisi technology pipelines ke sath develop karna hai jo direct code quality or execution index ko check karti hain. 
+              My core focus is working with technology pipelines that directly reflect code quality and execution standards, across the MERN Stack, React Native, and Electron.js ecosystems.
             </p>
             <p className="text-gray-400 leading-relaxed font-light">
-              Category tabs par click karke aap meri specific stack details ko dynamically screen par verify kar sakte hain.
+              Click on any category tab to dynamically explore my specific skill proficiency in that stack.
             </p>
 
             {/* Interactive Dynamic Tabs Button Layout */}

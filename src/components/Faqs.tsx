@@ -18,8 +18,7 @@ const Faqs = () => {
           Technical Architecture FAQs
         </h2>
         <p className="text-gray-500 text-sm mt-4 font-light">
-          Mera development blueprint, processing choices, aur cross-platform
-          framework handling se mutabiq aam sawalat ke jawabat.
+         Common questions about my development approach, technical decisions, and cross-platform framework handling.
         </p>
       </div>
 

@@ -19,41 +19,43 @@ export default function Hero() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-500"></span>
             </span>
             <span className="text-xs font-semibold text-blue-300 tracking-wider uppercase">
-              Enterprise Multi-Platform Engineer
+              Available for Freelance Projects
             </span>
           </div>
 
-          {/* Majestic SEO-rich Main Title */}
+          {/* SEO-rich Main Title */}
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none text-white">
-            Engineering Clean <br />
+            Hasnain Alam <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-300 to-white drop-shadow-[0_2px_20px_rgba(59,130,246,0.2)]">
-              Web, Mobile & Desktop
-            </span>{" "}
-            <br />
-            Architectures
+              Full-Stack MERN Developer
+            </span>
           </h1>
 
           {/* Strategic Definition: What this Website Represents */}
           <p className="text-gray-400 text-lg leading-relaxed max-w-2xl font-light">
-            This system represents a production-grade, component-driven
-            portfolio engineered in{" "}
-            <span className="text-white font-medium">Next.js & TypeScript</span>
-            . It serves as a live presentation of architectural patterns
-            showcasing responsive full-stack applications, integrated native
-            ecosystems, and robust cross-platform software.
+            I&apos;m a Full-Stack Developer specializing in the{" "}
+            <span className="text-white font-medium">
+              MERN Stack, Next.js & TypeScript
+            </span>
+            , helping businesses build fast, scalable web applications. I also
+            build cross-platform mobile apps with{" "}
+            <span className="text-white font-medium">React Native</span> and
+            native desktop software with{" "}
+            <span className="text-white font-medium">Electron.js</span> —
+            turning ideas into production-ready products across every platform.
           </p>
 
           {/* Dynamic Interactive Tech Highlights */}
           <div className="grid grid-cols-3 gap-4 py-2">
             <div className="bg-gray-950/45 border border-gray-900 rounded-xl p-3.5 hover:border-blue-500/20 transition-all">
               <div className="text-xs text-blue-400 font-semibold mb-1">
-                MERN WEB
+                MERN STACK
               </div>
-              <div className="text-sm font-bold text-gray-200">SaaS & APIs</div>
+              <div className="text-sm font-bold text-gray-200">Web & APIs</div>
             </div>
             <div className="bg-gray-950/45 border border-gray-900 rounded-xl p-3.5 hover:border-cyan-500/20 transition-all">
               <div className="text-xs text-cyan-400 font-semibold mb-1">
-                MOBILE APP
+                MOBILE APPS
               </div>
               <div className="text-sm font-bold text-gray-200">
                 React Native
@@ -61,7 +63,7 @@ export default function Hero() {
             </div>
             <div className="bg-gray-950/45 border border-gray-900 rounded-xl p-3.5 hover:border-purple-500/20 transition-all">
               <div className="text-xs text-purple-400 font-semibold mb-1">
-                DESKTOP
+                DESKTOP APPS
               </div>
               <div className="text-sm font-bold text-gray-200">Electron.js</div>
             </div>
@@ -70,16 +72,16 @@ export default function Hero() {
           {/* Premium Call-to-Actions */}
           <div className="flex flex-wrap items-center gap-4 pt-4">
             <Link
-              href="#projects"
+              href="/projects"
               className="px-8 py-4 bg-linear-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-bold rounded-xl shadow-[0_4px_25px_rgba(59,130,246,0.35)] transition-all duration-300 transform hover:-translate-y-1 text-center"
             >
-              My Projects
+              View My Projects
             </Link>
             <Link
               href="#contact"
               className="px-8 py-4 bg-gray-900/60 hover:bg-gray-800/80 text-gray-200 font-bold rounded-xl border border-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-center"
             >
-              Contact Me
+              Hire Me
             </Link>
           </div>
 
@@ -90,7 +92,7 @@ export default function Hero() {
             </span>
             <div className="flex items-center space-x-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/YOUR_GITHUB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-400 hover:text-white hover:bg-gray-900/80 rounded-lg transition-colors"
@@ -109,7 +111,7 @@ export default function Hero() {
                 </svg>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/YOUR_LINKEDIN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-400 hover:text-blue-400 hover:bg-gray-900/80 rounded-lg transition-colors"
@@ -124,11 +126,11 @@ export default function Hero() {
                 </svg>
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://twitter.com/YOUR_X"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-400 hover:text-cyan-400 hover:bg-gray-900/80 rounded-lg transition-colors"
-                title="Twitter Profile"
+                title="X (Twitter) Profile"
               >
                 <svg
                   className="w-5 h-5"
@@ -144,16 +146,14 @@ export default function Hero() {
 
         {/* Hero Right Media Column (5/12 Grid) */}
         <div className="lg:col-span-5 relative flex justify-center">
-          {/* Visual Frame & Backglowing Effects */}
           <div className="relative w-72 sm:w-96 aspect-3/4 rounded-3xl overflow-hidden group border border-gray-800 bg-gray-950/60 p-2">
             <div className="absolute inset-0 bg-linear-to-t from-blue-600/25 via-transparent to-transparent z-10" />
             <div className="absolute -inset-1.5 bg-linear-to-r from-blue-500 to-cyan-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200" />
 
-            {/* Profile Image Render with fallback properties */}
             <div className="w-full h-full relative rounded-2xl overflow-hidden bg-[#0d1221]">
               <Image
                 src="/Hasnain-alam.png"
-                alt="Hasnain Alam Full-Stack Engineer"
+                alt="Hasnain Alam - Full-Stack MERN, React Native and Electron.js Developer"
                 className="w-full h-full object-cover object-top scale-100 group-hover:scale-[1.03] transition-transform duration-500 relative z-0"
                 height={300}
                 width={300}
@@ -162,7 +162,6 @@ export default function Hero() {
               />
             </div>
 
-            {/* Float Floating Tech Pill A */}
             <div className="absolute top-6 left-3.75 z-20 bg-[#080b13]/90 border border-blue-500/30 rounded-2xl px-4 py-2 flex items-center space-x-2 shadow-[0_4px_20px_rgba(59,130,246,0.3)] hover:scale-105 transition-transform">
               <span className="p-1 rounded bg-blue-500/15 text-blue-400 text-xs font-bold">
                 NEXT
@@ -172,7 +171,6 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* Float Floating Tech Pill B */}
             <div className="absolute bottom-12 right-3.75 z-20 bg-[#080b13]/90 border border-cyan-500/30 rounded-2xl px-4 py-2 flex items-center space-x-2 shadow-[0_4px_20px_rgba(6,182,212,0.3)] hover:scale-105 transition-transform">
               <span className="p-1 rounded bg-cyan-500/15 text-cyan-400 text-xs font-bold">
                 NATIVE
