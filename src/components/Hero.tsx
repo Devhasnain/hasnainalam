@@ -92,14 +92,14 @@ export default function Hero() {
             </span>
             <div className="flex items-center space-x-4">
               <Link
-                href="https://github.com/YOUR_GITHUB"
+                href="https://github.com/devhasnain"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-400 hover:text-white hover:bg-gray-900/80 rounded-lg transition-colors"
                 title="GitHub Profile"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -111,7 +111,7 @@ export default function Hero() {
                 </svg>
               </Link>
               <Link
-                href="https://linkedin.com/in/YOUR_LINKEDIN"
+                href="https://www.linkedin.com/in/devhasnain"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-gray-400 hover:text-blue-400 hover:bg-gray-900/80 rounded-lg transition-colors"
@@ -126,18 +126,19 @@ export default function Hero() {
                 </svg>
               </Link>
               <Link
-                href="https://twitter.com/YOUR_X"
+                href="https://fiverr.com/hasnainalam462"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 text-gray-400 hover:text-cyan-400 hover:bg-gray-900/80 rounded-lg transition-colors"
-                title="X (Twitter) Profile"
+                className="p-2 text-gray-400 hover:text-green-400 hover:bg-gray-900/80 rounded-lg transition-colors"
+                title="Fiverr Profile"
               >
                 <svg
-                  className="w-5 h-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m2.41 5.29a1.06 1.06 0 1 1-1.06 1.06 1.06 1.06 0 0 1 1.06-1.06m2 9.38h-3.89v-1.58h.82v-3.35H10.7v3.35h1v1.58h-4v-1.58h.83v-3.35h-.9v-1.59h.89v-.27c0-2.14 1.86-2.42 2.88-2.42a7 7 0 0 1 .77 0v1.76a2.5 2.5 0 0 0-.53 0c-.31 0-.94 0-.94.64v.32h4.84v4.95h.83z" />
                 </svg>
               </Link>
             </div>
