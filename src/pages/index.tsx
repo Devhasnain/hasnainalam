@@ -1,78 +1,120 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import { getBlogs, getProjects } from "@/constants/quries";
+import HomeSchema from "@/components/HomeSchema";
+import Services from "@/components/Services";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import Skills from "@/components/Skills";
+import About from "@/components/About";
+import Hero from "@/components/Hero";
+import Faqs from "@/components/Faqs";
+import Blog from "@/components/Blog";
+import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+type Props = {
+  posts: any[];
+  projects: any[];
+};
 
-export default function Home() {
+const Home = ({ posts, projects }: Props) => {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+     <Head>
+        {/* Basic SEO */}
+        <title>
+          Hasnain Alam | Full-Stack MERN, Next.js & Mobile Developer
+        </title>
+
+        <meta
+          name="description"
+          content="Professional portfolio of Hasnain Alam, a Full-Stack MERN, Next.js, React Native, Electron.js, and NestJS developer building high-performance web, mobile, and desktop applications."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the index.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs/pages/getting-started?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <meta
+          name="keywords"
+          content="Hasnain Alam, Hasnain Alam Developer, MERN Stack Developer, Full Stack Developer, Next.js Developer, React.js Developer, React Native Developer, Electron.js Developer, NestJS Developer, Node.js Developer, MongoDB Developer, TypeScript Developer, JavaScript Developer, Portfolio Website, Frontend Developer, Backend Developer, API Developer, Web Developer Pakistan"
+        />
+
+        <meta name="author" content="Hasnain Alam" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://portfolio-cms.huefinds.store/" />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Hasnain Alam | Full-Stack MERN, Next.js & Mobile Developer"
+        />
+
+        <meta
+          property="og:description"
+          content="Explore modern web, mobile, and desktop applications built by Hasnain Alam using MERN Stack, Next.js, React Native, Electron.js, NestJS, and TypeScript."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://portfolio-cms.huefinds.store/"
+        />
+        <meta property="og:site_name" content="Hasnain Alam Portfolio" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta
+          property="og:image"
+          content="https://portfolio-cms.huefinds.store/og-image.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image:alt"
+          content="Hasnain Alam Full-Stack Developer Portfolio"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Hasnain Alam | Full-Stack MERN, Next.js & Mobile Developer"
+        />
+        <meta
+          name="twitter:description"
+          content="Professional MERN Stack, Next.js, React Native, Electron.js & NestJS developer portfolio."
+        />
+        <meta
+          name="twitter:image"
+          content="https://portfolio-cms.huefinds.store/og-image.png"
+        />
+
+        {/* Theme */}
+        <meta name="theme-color" content="#0A0A0A" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </Head>
+      <HomeSchema />
+      <Hero />
+      <About />
+      <Services />
+      <Skills />
+      <Projects projects={projects} />
+      <Blog posts={posts} />
+      <Faqs />
+      <Contact />
+    </>
   );
-}
+};
+
+export const getStaticProps = async () => {
+  const blogRes = await getBlogs(6);
+  const posts = blogRes.data?.data?.posts?.nodes || [];
+
+  const projsRes = await getProjects(6);
+  const projects = projsRes.data?.data?.projects?.nodes || [];
+  return { props: { posts, projects } };
+};
+
+export default Home;
