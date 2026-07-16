@@ -9,7 +9,6 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-hasnainalam.com-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hasnainalam.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-devhasnain-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devhasnain)
 [![Fiverr](https://img.shields.io/badge/Fiverr-hasnainalam462-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://fiverr.com/hasnainalam462)
-[![Email](https://img.shields.io/badge/Email-contact%40hasnainalam.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@hasnainalam.com)
 
 </div>
 
