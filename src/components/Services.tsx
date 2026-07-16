@@ -25,7 +25,7 @@ export default function Services() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {serviceArray.map((svc, idx) => (
+        {serviceArray.slice(0,6).map((svc, idx) => (
           <ServiceCard svc={svc} key={idx} />
         ))}
       </div>

@@ -66,6 +66,8 @@ const Home = ({ posts, projects }: Props) => {
           property="og:image"
           content="https://hasnainalam.com/Hasnain-alam-og-image.png"
         />
+        <meta property="profile:first_name" content="Hasnain" />
+        <meta property="profile:last_name" content="Alam" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta
