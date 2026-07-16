@@ -12,8 +12,19 @@ Hasnain Alam is a multi-platform developer focused on production-ready, scalable
 
 - [Services Overview](https://hasnainalam.com/services): Full list of development services offered.
 - [MERN Stack Development](https://hasnainalam.com/services/mern-stack-development): Full-stack web applications using MongoDB, Express, React & Node.js — custom APIs, database design, authentication, and deployment.
+- [Next.js Development](https://hasnainalam.com/services/nextjs-development): High-performance, SEO-friendly web applications built with Next.js, including SSR, SSG, and API routes.
+- [React.js Development](https://hasnainalam.com/services/react-js-development): Fast, interactive front-end applications and component libraries built with React.js.
+- [Node.js Backend Development](https://hasnainalam.com/services/nodejs-backend-development): Scalable backend systems, REST/GraphQL APIs, and server-side architecture using Node.js and Express.js.
 - [React Native App Development](https://hasnainalam.com/services/react-native-development): Cross-platform mobile apps for iOS & Android from a single codebase, including native device integrations and app store deployment.
 - [Electron.js Desktop App Development](https://hasnainalam.com/services/electron-desktop-development): Cross-platform desktop applications for Windows, macOS & Linux with native OS integration and offline support.
+- [E-commerce Website Development](https://hasnainalam.com/services/ecommerce-website-development): Custom online stores with secure payment integration, inventory management, and scalable architecture.
+- [SaaS Website Development](https://hasnainalam.com/services/saas-website-development): End-to-end SaaS product development including multi-tenant architecture, subscriptions, and dashboards.
+- [Landing Page Development](https://hasnainalam.com/services/landing-page-development): High-converting, performance-optimized landing pages for marketing campaigns and product launches.
+- [WordPress Development](https://hasnainalam.com/services/wordpress-development): Custom WordPress websites, theme customization, and plugin development.
+- [API Integration Services](https://hasnainalam.com/services/api-integration-services): Third-party and custom API integration including payment gateways, CRMs, and external platforms.
+- [Website Maintenance & Support](https://hasnainalam.com/services/website-maintenance-support): Ongoing website updates, bug fixes, performance monitoring, and technical support.
+- [Hire Full-Stack Developer](https://hasnainalam.com/services/hire-full-stack-developer): Dedicated full-stack engineering resource for freelance, remote, or contract-based hiring.
+- [Hire Freelance Web Developer](https://hasnainalam.com/services/hire-freelance-web-developer): On-demand freelance web development services for short-term and long-term projects.
 
 ## Projects
 
@@ -26,6 +37,10 @@ Hasnain Alam is a multi-platform developer focused on production-ready, scalable
 ## Contact
 
 - [Contact](https://hasnainalam.com/contact): Get in touch for freelance, remote, or full-time software engineering projects. Direct email and project inquiry form available.
+
+## Legal
+
+- [Privacy Policy](https://hasnainalam.com/privacy-policy): Website privacy policy detailing data collection, usage, and user rights.
 
 ## Tech Stack
 
