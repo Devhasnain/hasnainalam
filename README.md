@@ -90,7 +90,6 @@ I'm open to freelance, remote, and full-time software engineering opportunities.
 
 - 🌐 Website: **[hasnainalam.com](https://hasnainalam.com)**
 - 📩 Contact Form: **[hasnainalam.com/contact](https://hasnainalam.com/contact)**
-- ✉️ Email: **[contact@hasnainalam.com](mailto:contact@hasnainalam.com)**
 - 💼 LinkedIn: **[linkedin.com/in/devhasnain](https://www.linkedin.com/in/devhasnain)**
 - 🎯 Fiverr: **[fiverr.com/hasnainalam462](https://fiverr.com/hasnainalam462)**
 - 🐙 GitHub: **[github.com/devhasnain](https://github.com/devhasnain)**
