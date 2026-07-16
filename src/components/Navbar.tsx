@@ -25,6 +25,7 @@ const Navbar = ({ className }: Props) => {
                 <Image
                   src="/name-logo.png"
                   alt="Hasnain Alam Professional Logo Design"
+                  title="Hasnain Alam Logo Image"
                   className="object-contain"
                   height={250}
                   width={250}

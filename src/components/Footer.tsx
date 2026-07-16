@@ -18,6 +18,7 @@ const Footer = ({ className }: Props) => {
             <Image
               src="/name-logo.png"
               alt="Hasnain Alam Footer Logo Representative"
+              title="Hasnain Alam Logo Image"
               className="object-contain"
               height={250}
               width={250}
@@ -36,10 +37,10 @@ const Footer = ({ className }: Props) => {
             ))}
           </div>
         </div>
-      <div className="text-gray-500 text-center font-light">
-        &copy; 2026 Hasnain Alam. Built using Next.js, React & Tailwind CSS. All
-        rights reserved.
-      </div>
+        <div className="text-gray-500 text-center font-light">
+          &copy; 2026 Hasnain Alam. Built using Next.js, React & Tailwind CSS.
+          All rights reserved.
+        </div>
       </div>
     </footer>
   );
