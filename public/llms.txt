@@ -1,58 +1,202 @@
 # Hasnain Alam
 
-> Hasnain Alam is a Full-Stack Software Engineer specializing in the MERN Stack, Next.js, TypeScript, React Native, and Electron.js. He builds high-performance web applications, cross-platform mobile apps, and native desktop software for clients worldwide.
+> **Hasnain Alam** is a Full-Stack Software Engineer specializing in the **MERN Stack, Next.js, TypeScript, React Native, Electron.js, and modern web technologies**. He builds high-performance web applications, cross-platform mobile apps, desktop software, and free online developer tools.
 
-Hasnain Alam is a multi-platform developer focused on production-ready, scalable applications across three core domains: web (MERN Stack & Next.js), mobile (React Native), and desktop (Electron.js). He is available for freelance projects, remote engagements, and long-term consultations.
+Hasnain Alam is a multi-platform software engineer focused on building production-ready, scalable solutions across **Web, Mobile, Desktop, and Developer Utilities**. He is available for freelance projects, remote engagements, technical consulting, and long-term software development partnerships.
 
-## About
+---
 
-- [About Hasnain Alam](https://hasnainalam.com/about): Background, professional mission, technical philosophy, and core multi-platform framework breakdown (Web, Mobile, Desktop).
+# About
 
-## Services
+* [About Hasnain Alam](https://hasnainalam.com/about): Learn about Hasnain Alam's background, technical expertise, development philosophy, and experience building scalable web, mobile, desktop, and cloud applications.
 
-- [Services Overview](https://hasnainalam.com/services): Full list of development services offered.
-- [MERN Stack Development](https://hasnainalam.com/services/mern-stack-development): Full-stack web applications using MongoDB, Express, React & Node.js — custom APIs, database design, authentication, and deployment.
-- [Next.js Development](https://hasnainalam.com/services/nextjs-development): High-performance, SEO-friendly web applications built with Next.js, including SSR, SSG, and API routes.
-- [React.js Development](https://hasnainalam.com/services/react-js-development): Fast, interactive front-end applications and component libraries built with React.js.
-- [Node.js Backend Development](https://hasnainalam.com/services/nodejs-backend-development): Scalable backend systems, REST/GraphQL APIs, and server-side architecture using Node.js and Express.js.
-- [React Native App Development](https://hasnainalam.com/services/react-native-development): Cross-platform mobile apps for iOS & Android from a single codebase, including native device integrations and app store deployment.
-- [Electron.js Desktop App Development](https://hasnainalam.com/services/electron-desktop-development): Cross-platform desktop applications for Windows, macOS & Linux with native OS integration and offline support.
-- [E-commerce Website Development](https://hasnainalam.com/services/ecommerce-website-development): Custom online stores with secure payment integration, inventory management, and scalable architecture.
-- [SaaS Website Development](https://hasnainalam.com/services/saas-website-development): End-to-end SaaS product development including multi-tenant architecture, subscriptions, and dashboards.
-- [Landing Page Development](https://hasnainalam.com/services/landing-page-development): High-converting, performance-optimized landing pages for marketing campaigns and product launches.
-- [WordPress Development](https://hasnainalam.com/services/wordpress-development): Custom WordPress websites, theme customization, and plugin development.
-- [API Integration Services](https://hasnainalam.com/services/api-integration-services): Third-party and custom API integration including payment gateways, CRMs, and external platforms.
-- [Website Maintenance & Support](https://hasnainalam.com/services/website-maintenance-support): Ongoing website updates, bug fixes, performance monitoring, and technical support.
-- [Hire Full-Stack Developer](https://hasnainalam.com/services/hire-full-stack-developer): Dedicated full-stack engineering resource for freelance, remote, or contract-based hiring.
-- [Hire Freelance Web Developer](https://hasnainalam.com/services/hire-freelance-web-developer): On-demand freelance web development services for short-term and long-term projects.
+---
 
-## Projects
+# Services
 
-- [Projects](https://hasnainalam.com/projects): Portfolio of completed web, mobile, and desktop applications built with MERN Stack, Next.js, React Native, and Electron.js. Each project has its own detail page at /projects/[project-slug].
+* [Services Overview](https://hasnainalam.com/services): Complete list of software development services.
 
-## Blog
+* [MERN Stack Development](https://hasnainalam.com/services/mern-stack-development): Custom full-stack applications using MongoDB, Express.js, React, and Node.js.
 
-- [Blog](https://hasnainalam.com/blog): Technical articles and tutorials on full-stack development, MERN Stack, Next.js, React Native, Electron.js, and software architecture. Each post has its own detail page at /blog/[post-slug].
+* [Next.js Development](https://hasnainalam.com/services/nextjs-development): SEO-friendly, high-performance web applications using Next.js with SSR, SSG, ISR, and API Routes.
 
-## Contact
+* [React.js Development](https://hasnainalam.com/services/react-js-development): Interactive React applications, reusable component libraries, and modern frontend architecture.
 
-- [Contact](https://hasnainalam.com/contact): Get in touch for freelance, remote, or full-time software engineering projects. Direct email and project inquiry form available.
+* [Node.js Backend Development](https://hasnainalam.com/services/nodejs-backend-development): REST APIs, GraphQL APIs, authentication systems, scalable backend architecture, and database integration.
 
-## Legal
+* [React Native App Development](https://hasnainalam.com/services/react-native-development): Cross-platform Android & iOS applications with native functionality and App Store deployment.
 
-- [Privacy Policy](https://hasnainalam.com/privacy-policy): Website privacy policy detailing data collection, usage, and user rights.
+* [Electron.js Desktop App Development](https://hasnainalam.com/services/electron-desktop-development): Native desktop software for Windows, macOS, and Linux with offline-first capabilities.
 
-## Tech Stack
+* [E-commerce Website Development](https://hasnainalam.com/services/ecommerce-website-development): Custom online stores with payment gateways, inventory management, and scalable architecture.
 
-- **Web**: Next.js, React.js, Node.js, Express.js, MongoDB, PostgreSQL, TypeScript, Tailwind CSS
-- **Mobile**: React Native, Expo, Firebase
-- **Desktop**: Electron.js
-- **Other**: REST APIs, GraphQL, JWT Authentication, Third-party API integrations
+* [SaaS Website Development](https://hasnainalam.com/services/saas-website-development): End-to-end SaaS platforms with authentication, subscriptions, dashboards, and multi-tenant architecture.
 
-## Contact Information
+* [Landing Page Development](https://hasnainalam.com/services/landing-page-development): High-converting landing pages optimized for SEO, Core Web Vitals, and lead generation.
 
-- Email: contact@hasnainalam.com
-- Website: https://hasnainalam.com
-- GitHub: https://github.com/devhasnain
-- LinkedIn: https://www.linkedin.com/in/devhasnain
-- Fiverr: https://fiverr.com/hasnainalam462
+* [WordPress Development](https://hasnainalam.com/services/wordpress-development): Custom WordPress websites, themes, plugins, headless WordPress, and CMS integrations.
+
+* [API Integration Services](https://hasnainalam.com/services/api-integration-services): Payment gateways, CRMs, AI APIs, cloud services, and third-party integrations.
+
+* [Website Maintenance & Support](https://hasnainalam.com/services/website-maintenance-support): Continuous maintenance, security updates, optimization, monitoring, and technical support.
+
+* [Hire Full-Stack Developer](https://hasnainalam.com/services/hire-full-stack-developer): Hire Hasnain Alam as a dedicated freelance or remote full-stack developer.
+
+* [Hire Freelance Web Developer](https://hasnainalam.com/services/hire-freelance-web-developer): Flexible freelance development services for startups, agencies, and businesses.
+
+---
+
+# Projects
+
+* [Projects](https://hasnainalam.com/projects): Portfolio showcasing production-ready web applications, SaaS platforms, mobile apps, desktop software, APIs, dashboards, and custom software solutions.
+
+Each project includes its own detailed page under:
+
+* `/projects/[project-slug]`
+
+---
+
+# Developer Tools
+
+The website also provides a growing collection of **free online developer, SEO, text, and productivity tools** designed for developers, content creators, marketers, and students.
+
+## Tools Overview
+
+* [Developer Tools](https://hasnainalam.com/tools): Browse all free online tools.
+
+Individual tools include:
+
+* [Base64 Converter](https://hasnainalam.com/tools/base64-converter): Encode and decode Base64 strings instantly.
+
+* [Case Converter](https://hasnainalam.com/tools/case-converter): Convert text between uppercase, lowercase, title case, sentence case, and camelCase.
+
+* [Color Converter](https://hasnainalam.com/tools/color-converter): Convert HEX, RGB, HSL, HSV, and CSS color formats.
+
+* [JSON Formatter](https://hasnainalam.com/tools/json-formatter): Beautify, validate, and minify JSON data.
+
+* [Password Generator](https://hasnainalam.com/tools/password-generator): Generate secure random passwords with customizable options.
+
+* [Slug Generator](https://hasnainalam.com/tools/slug-generator): Create clean SEO-friendly URL slugs from text.
+
+* [Timestamp Converter](https://hasnainalam.com/tools/timestamp-converter): Convert Unix timestamps into readable dates and vice versa.
+
+* [Word Counter](https://hasnainalam.com/tools/word-counter): Count words, characters, sentences, paragraphs, and reading time.
+
+Every tool has its own SEO-optimized page located at:
+
+* `/tools/[tool-slug]`
+
+---
+
+# Blog
+
+* [Blog](https://hasnainalam.com/blog): Technical tutorials, software engineering articles, programming guides, Next.js tips, React Native development, Electron.js, Node.js, TypeScript, MERN Stack, performance optimization, authentication, APIs, databases, and modern web development.
+
+Each article has its own page:
+
+* `/blog/[post-slug]`
+
+---
+
+# Contact
+
+* [Contact](https://hasnainalam.com/contact): Contact Hasnain Alam for freelance development, consulting, remote work, collaboration opportunities, or project inquiries.
+
+---
+
+# Legal
+
+* [Privacy Policy](https://hasnainalam.com/privacy-policy): Information regarding privacy, cookies, data collection, and user rights.
+
+---
+
+# Technical Skills
+
+## Frontend
+
+* Next.js
+* React.js
+* TypeScript
+* JavaScript
+* Tailwind CSS
+* HTML5
+* CSS3
+
+## Backend
+
+* Node.js
+* Express.js
+* REST APIs
+* GraphQL
+* JWT Authentication
+
+## Databases
+
+* MongoDB
+* PostgreSQL
+
+## Mobile
+
+* React Native
+* Expo
+* Firebase
+
+## Desktop
+
+* Electron.js
+
+## Additional Technologies
+
+* WordPress
+* Cloudinary
+* Git
+* GitHub
+* API Integrations
+* Authentication Systems
+* Performance Optimization
+* SEO Optimization
+
+---
+
+# Website Structure
+
+The website contains the following primary sections:
+
+* Home
+* About
+* Services
+* Projects
+* Tools
+* Blog
+* Contact
+* Privacy Policy
+
+Dynamic routes include:
+
+* `/projects/[project-slug]`
+* `/blog/[post-slug]`
+* `/tools/[tool-slug]`
+
+---
+
+# Contact Information
+
+**Website**
+
+https://hasnainalam.com
+
+**Email**
+
+[contact@hasnainalam.com](mailto:contact@hasnainalam.com)
+
+**GitHub**
+
+https://github.com/devhasnain
+
+**LinkedIn**
+
+https://www.linkedin.com/in/devhasnain
+
+**Fiverr**
+
+https://fiverr.com/hasnainalam462

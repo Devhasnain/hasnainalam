@@ -3,6 +3,7 @@
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Projects", href: "/projects" },
+    { name: "Tools", href: "/tools" },
     { name: "Blog", href: "/blog" },
   ];
 
