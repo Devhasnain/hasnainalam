@@ -1,10 +1,11 @@
 import { getPostBySlug, getPostsSlugs } from "@/constants/quries";
-import { getReadTime } from "@/utils/readTime";
 import { stripHtml } from "@/utils/stripHtml";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import moment from "moment";
+import clsx from "clsx";
 
 
 interface Props {
@@ -81,18 +82,16 @@ const BlogDetail = ({ post }: Props) => {
               <span className="px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 font-bold tracking-wider uppercase border border-blue-500/20">
                 {post?.categories?.nodes[0]?.name || "Uncategorized"}
               </span>
-              <span className="text-gray-600 font-mono">/</span>
-              <time className="text-gray-400" dateTime={post?.date}>
-                {new Date(post?.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </time>
               <span className="text-gray-600 font-mono">●</span>
-              <span className="text-gray-400 font-medium flex items-center gap-1">
-                ⏱️ {getReadTime(post?.content)}
-              </span>
+              <time className="text-gray-400" dateTime={post?.date}>
+                {moment.utc(post?.date).format("MMMM D, YYYY")}
+              </time>
+              {/* <span className="text-gray-400 font-medium flex items-center gap-1">
+                ⏱️{" "}
+                {typeof window !== "undefined"
+                  ? getReadTime(post?.content)
+                  : ""}
+              </span> */}
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
@@ -120,11 +119,32 @@ const BlogDetail = ({ post }: Props) => {
           </div>
 
           <div
-            className="prose prose-invert max-w-none pt-6 text-gray-300 font-light leading-relaxed space-y-6 
-              prose-headings:text-white prose-headings:font-bold prose-headings:tracking-tight
-              prose-h2:text-2xl prose-h2:pt-4 prose-h3:text-xl prose-h3:text-blue-400
-              prose-p:text-sm sm:prose-p:text-base prose-p:leading-relaxed
-              prose-strong:text-white prose-strong:font-semibold"
+            className={clsx(
+              "prose",
+              "pt-6",
+              "text-gray-300",
+              "font-light",
+              "leading-relaxed",
+              "space-y-6",
+              "prose-headings:text-white",
+              "prose-headings:font-bold",
+              "prose-headings:tracking-tight",
+              "prose-h2:text-2xl",
+              "prose-h2:pt-4",
+              "prose-h3:text-xl",
+              "prose-h3:text-blue-400",
+              "prose-p:text-sm",
+              "sm:prose-p:text-base",
+              "prose-p:leading-relaxed",
+              "prose-strong:text-white",
+              "prose-strong:font-semibold",
+              "prose-a:text-white",
+            )}
+            // className="prose pt-6 text-gray-300 font-light leading-relaxed space-y-6
+            //   prose-headings:text-white prose-headings:font-bold prose-headings:tracking-tight
+            //   prose-h2:text-2xl prose-h2:pt-4 prose-h3:text-xl prose-h3:text-blue-400
+            //   prose-p:text-sm sm:prose-p:text-base prose-p:leading-relaxed
+            //   prose-strong:text-white prose-strong:font-semibold"
             dangerouslySetInnerHTML={{ __html: post?.content }}
           />
 
