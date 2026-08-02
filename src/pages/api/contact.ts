@@ -20,7 +20,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       port: 465,
       secure: true, // 465 ke liye true, 587 ke liye false
       auth: {
-        user: process.env.SMTP_USER, // contact@hasnainalam.com
+        user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
       },
     });

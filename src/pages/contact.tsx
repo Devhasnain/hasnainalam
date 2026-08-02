@@ -127,7 +127,7 @@ export default function ContactPage() {
                       Official Routing
                     </h3>
                     <Link
-                      href="mailto:contact@hasnainalam.com"
+                      href="mailto:hasnainalam1166@gmail.com"
                       className="text-sm text-gray-200 hover:text-blue-400 transition-colors font-mono"
                     >
                       contact@hasnainalam.com

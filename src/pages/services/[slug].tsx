@@ -1,4 +1,3 @@
-import { serviceIconMap } from "@/utils/serviceIconMap";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { serviceArray } from "@/constants/services";
 import Link from "next/link";
@@ -15,7 +14,7 @@ const ServiceDetail = ({ service }: Props) => {
   if (!service) return null;
 
   const pageUrl = `${domain}/services/${service.slug}`;
-  const imageUrl = `${domain}/Hasnain-alam-og-image.png`;
+  const imageUrl = `${domain}/Hasnain-alam-services-cover.webp`;
 
   const jsonLdData = {
     "@context": "https://schema.org",

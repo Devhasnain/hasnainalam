@@ -18,7 +18,7 @@ const ProjectDetail = ({ project }: Props) => {
   const pageUrl = `${domain}/projects/${project.slug}`;
   const cleanExcerpt = stripHtml(project?.excerpt);
   const imageUrl =
-    project?.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam-og-image.png`;
+    project?.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam-projects-cover.webp`;
 
   // ACF fields — apne field group ke mutabiq names adjust karein
   const githubUrl = project?.projectDetails?.githuburl;

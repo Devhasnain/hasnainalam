@@ -39,20 +39,20 @@ const ProjectCard = ({ proj }: Props) => {
         <div className="space-y-3">
          
          <Link href={`/projects/${proj?.slug}`}>
-          <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-200 line-clamp-1">
+          <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors duration-200 line-clamp-2">
             {proj?.title}
           </h3>
          </Link>
 
           {/* Excerpt / Description */}
-          <p className="text-gray-400 leading-relaxed font-light line-clamp-3">
+          <p className="text-gray-400 leading-relaxed font-light line-clamp-2">
             {stripHtml(proj?.excerpt)}
           </p>
         </div>
 
         {/* Tech Tags */}
         <div className="flex flex-wrap gap-1.5 pt-2">
-          {proj?.tags?.map((tag, tIdx) => (
+          {proj?.tags?.slice(0,6)?.map((tag, tIdx) => (
             <span
               key={tIdx}
               className="text-[12px] font-mono px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 group-hover:border-gray-700 transition-colors"

@@ -123,6 +123,14 @@ export const queries = {
         slug
       }
     }
+
+    categories {
+        nodes {
+          id
+          name
+          slug
+        }
+      }
   }
 }`
 }
