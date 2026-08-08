@@ -26,6 +26,7 @@ const BlogCard = ({ post }: Props) => {
 
         <Image
           src={post.image || "/api/placeholder/400/250"}
+          title={post.title}
           alt={`${post.title} architectural concept blueprint`}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"

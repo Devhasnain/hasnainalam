@@ -125,6 +125,7 @@ export default function AboutPage() {
               <Image
                 src="/Hasnain-alam.png"
                 alt="Hasnain Alam - Full-Stack MERN, React Native & Electron.js Developer"
+                title="Hasnain Alam - Full-Stack MERN, React Native & Electron.js Developer"
                 fill
                 sizes="176px"
                 className="object-cover object-top group-hover:scale-105 transition-transform duration-300"

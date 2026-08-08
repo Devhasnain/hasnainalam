@@ -26,6 +26,7 @@ const ProjectCard = ({ proj }: Props) => {
 
         <Image
           src={proj?.image || "/api/placeholder/400/250"}
+          title={proj?.title}
           alt={`${proj?.title} Showcase Preview`}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"
