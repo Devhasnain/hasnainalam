@@ -8,7 +8,7 @@ const pageUrl = `${domain}/about`;
 const title = "About Hasnain Alam | Multi-Platform Software Engineer";
 const description =
   "Learn more about Hasnain Alam, a specialized Full-Stack Developer leveraging Next.js/MERN stack, React Native, and Electron.js to build high-performance applications.";
-const imageUrl = `${domain}/Hasnain-alam-og-image.png`;
+const imageUrl = `${domain}/Hasnain-alam-og-image.webp`;
 
 export default function AboutPage() {
   const jsonLdData = {
@@ -31,6 +31,7 @@ export default function AboutPage() {
       sameAs: [
         "https://github.com/devhasnain",
         "https://www.linkedin.com/in/devhasnain",
+        "https://fiverr.com/hasnainalam462",
       ],
     },
   };

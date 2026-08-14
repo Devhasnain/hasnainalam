@@ -87,10 +87,7 @@ export default function Hero() {
           </div>
 
           {/* Social Links Panel & Professional Connectivity */}
-          <div className="flex items-center space-x-6 pt-6 border-t border-gray-900/60">
-            <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">
-              Connect:
-            </span>
+          <div className="flex items-center space-x-6 pt-3 border-t border-gray-900/60">
             <SocialIcons />
           </div>
         </div>

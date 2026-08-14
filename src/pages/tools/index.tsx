@@ -48,7 +48,7 @@ const Tools = () => {
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content={`${domain}/Hasnain-alam-og-image.png`}
+          content={`${domain}/Hasnain-alam-og-image.webp`}
         />
         <meta property="og:site_name" content="Hasnain Alam Portfolio" />
 
@@ -57,7 +57,7 @@ const Tools = () => {
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content={`${domain}/Hasnain-alam-og-image.png`}
+          content={`${domain}/Hasnain-alam-og-image.webp`}
         />
         <link rel="icon" href="/favicon.png" />
 

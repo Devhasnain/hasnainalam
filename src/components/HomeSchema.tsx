@@ -52,10 +52,9 @@ export default function HomeSchema() {
       },
       knowsLanguage: ["English", "Urdu"],
       sameAs: [
-        "https://github.com/YOUR_GITHUB",
-        "https://linkedin.com/in/YOUR_LINKEDIN",
-        "https://x.com/YOUR_X",
-        "https://www.instagram.com/YOUR_INSTAGRAM",
+        "https://github.com/devhasnain",
+        "https://linkedin.com/in/devhasnain",
+        "https://fiverr.com/hasnainalam462",
       ],
     },
 

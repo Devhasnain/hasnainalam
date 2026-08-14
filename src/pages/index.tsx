@@ -64,7 +64,7 @@ const Home = ({ posts, projects }: Props) => {
 
         <meta
           property="og:image"
-          content="https://hasnainalam.com/Hasnain-alam-og-image.png"
+          content="https://hasnainalam.com/Hasnain-alam-og-image.webp"
         />
         <meta property="profile:first_name" content="Hasnain" />
         <meta property="profile:last_name" content="Alam" />
@@ -87,7 +87,7 @@ const Home = ({ posts, projects }: Props) => {
         />
         <meta
           name="twitter:image"
-          content="https://hasnainalam.com/Hasnain-alam-og-image.png"
+          content="https://hasnainalam.com/Hasnain-alam-og-image.webp"
         />
 
         {/* Theme */}

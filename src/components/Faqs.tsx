@@ -1,5 +1,6 @@
 import { faqsData } from "@/constants/faqs";
-import React from "react";
+
+import Accordion from "./Accordion";
 
 
 const Faqs = () => {
@@ -18,56 +19,16 @@ const Faqs = () => {
           Technical Architecture FAQs
         </h2>
         <p className="text-gray-500 text-sm mt-4 font-light">
-         Common questions about my development approach, technical decisions, and cross-platform framework handling.
+          Common questions about my development approach, technical decisions,
+          and cross-platform framework handling.
         </p>
       </div>
 
       {/* Accordion Component List Loop */}
       <div className="space-y-4" data-aos="fade-up">
-        {faqsData.map((faq, index) => {
-          // Local state toggle framework handles the open/close triggers seamlessly
-          const [isOpen, setIsOpen] = React.useState(false);
-
-          return (
-            <div
-              key={index}
-              className="bg-gray-950/40 border border-gray-900 hover:border-gray-800/80 rounded-2xl transition-all duration-300 overflow-hidden shadow-lg"
-            >
-              {/* FAQ Accordion Header Button */}
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                aria-expanded={isOpen}
-                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none select-none group"
-              >
-                <span className="text-base font-semibold text-gray-200 group-hover:text-blue-400 transition-colors duration-200 pr-4">
-                  {faq.question}
-                </span>
-                <span
-                  className={`text-xl transform transition-transform duration-300 font-mono ${
-                    isOpen
-                      ? "rotate-180 text-blue-400"
-                      : "text-gray-600 group-hover:text-gray-400"
-                  }`}
-                >
-                  {isOpen ? "−" : "+"}
-                </span>
-              </button>
-
-              {/* FAQ Smooth Collapsible Body Panel */}
-              <div
-                className={`transition-all duration-300 ease-in-out border-gray-900/40 ${
-                  isOpen
-                    ? "max-h-60 border-t p-6 bg-gray-950/20"
-                    : "max-h-0 opacity-0 pointer-events-none"
-                }`}
-              >
-                <p className="text-gray-400 text-sm leading-relaxed font-light">
-                  {faq.answer}
-                </p>
-              </div>
-            </div>
-          );
-        })}
+        {faqsData.map((faq, index) => (
+          <Accordion key={index} q={faq.question} a={faq.answer} />
+        ))}
       </div>
     </section>
   );

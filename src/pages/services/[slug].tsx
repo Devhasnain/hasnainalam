@@ -1,5 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import { serviceArray } from "@/constants/services";
+import Accordion from "@/components/Accordion";
 import Link from "next/link";
 import Head from "next/head";
 
@@ -18,18 +19,38 @@ const ServiceDetail = ({ service }: Props) => {
 
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${pageUrl}/#service`,
-    name: service.title,
-    description: service.metaDescription,
-    provider: {
-      "@type": "Person",
-      name: "Hasnain Alam",
-      url: domain,
-    },
-    areaServed: "Worldwide",
-    serviceType: service.title,
-    url: pageUrl,
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${pageUrl}/#service`,
+        name: service.title,
+        description: service.metaDescription,
+        provider: {
+          "@type": "Person",
+          name: "Hasnain Alam",
+          url: domain,
+        },
+        areaServed: "Worldwide",
+        serviceType: service.title,
+        url: pageUrl,
+      },
+      ...(service.faqs && service.faqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage",
+              "@id": `${pageUrl}/#faq`,
+              mainEntity: service.faqs.map((faq: { a: string; q: string }) => ({
+                "@type": "Question",
+                name: faq.q,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.a,
+                },
+              })),
+            },
+          ]
+        : []),
+    ],
   };
 
   const breadcrumbLd = {
@@ -99,6 +120,28 @@ const ServiceDetail = ({ service }: Props) => {
             </p>
           </header>
 
+          <div className="flex flex-row items-center gap-4 flex-wrap">
+            <Link
+              href="/contact"
+              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold rounded-xl transition-all"
+            >
+              Get a Quote &rarr;
+            </Link>
+
+            {service.externalLinks?.fiverr && (
+              <Link
+                className="px-6 py-3 bg-green-700 hover:bg-green-800 text-white text-sm font-bold rounded-xl transition-all"
+                href={service.externalLinks.fiverr}
+                target="_blank"
+                title="Hire on Fiverr"
+                aria-label="Hire on Fiverr"
+                rel="nofollow noopener"
+              >
+                Hire on Fiverr &rarr;
+              </Link>
+            )}
+          </div>
+
           <div className="prose prose-invert max-w-none pt-2 text-gray-300 font-light leading-relaxed space-y-6">
             <p className="text-sm sm:text-base leading-relaxed">
               {service.fullDesc}
@@ -106,7 +149,7 @@ const ServiceDetail = ({ service }: Props) => {
           </div>
 
           {/* Tech Stack */}
-          <div>
+          <div id="tech-stack">
             <h2 className="text-xl font-bold text-white mb-4">Tech Stack</h2>
             <div className="flex flex-wrap gap-2">
               {service.techStack?.map((tech: string, idx: number) => (
@@ -121,7 +164,7 @@ const ServiceDetail = ({ service }: Props) => {
           </div>
 
           {/* Features */}
-          <div>
+          <div id="features">
             <h2 className="text-xl font-bold text-white mb-4">
               What&apos;s Included
             </h2>
@@ -138,14 +181,21 @@ const ServiceDetail = ({ service }: Props) => {
             </ul>
           </div>
 
+          {/* Faqs  */}
+          <div id="faq">
+            <h2 className="text-xl font-bold text-white mb-4">Faqs</h2>
+            <div className="space-y-4" data-aos="fade-up">
+              {service.faqs?.map(
+                (faq: { q: string; a: string }, idx: number) => (
+                  <Accordion key={idx} q={faq.q} a={faq.a} />
+                )
+              )}
+            </div>
+          </div>
+
           {/* CTA */}
           <footer className="mt-12 pt-8 border-t border-gray-900 flex items-center justify-between gap-4 flex-wrap">
-            <Link
-              href="/contact"
-              className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold rounded-xl transition-all"
-            >
-              Get a Quote &rarr;
-            </Link>
+            <div />
 
             <Link
               href="/services"
