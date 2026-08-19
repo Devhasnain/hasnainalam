@@ -19,13 +19,16 @@ const Skills = () => {
               <div className="w-8 h-px bg-blue-500" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-              My Tactical Stack Proficiency
+              MERN Stack &amp; Next.js Skills Proficiency
             </h2>
-            <p className="text-gray-400 leading-relaxed font-light">
-              My core focus is working with technology pipelines that directly reflect code quality and execution standards, across the MERN Stack, React Native, and Electron.js ecosystems.
+            <p className="text-gray-300 leading-relaxed font-light">
+              I work across the full MERN Stack and Next.js ecosystem —
+              React.js, Node.js, MongoDB, and TypeScript — along with React
+              Native for mobile and Electron.js for desktop applications.
             </p>
-            <p className="text-gray-400 leading-relaxed font-light">
-              Click on any category tab to dynamically explore my specific skill proficiency in that stack.
+            <p className="text-gray-300 leading-relaxed font-light">
+              Click on any category tab to explore my proficiency in each
+              stack.
             </p>
 
             {/* Interactive Dynamic Tabs Button Layout */}

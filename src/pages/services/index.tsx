@@ -6,36 +6,61 @@ import Head from "next/head";
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/services`;
 const title =
-  "Services | Hasnain Alam - MERN, React Native & Electron.js Developer";
+  "Services | MERN Stack, Next.js, React Native & Electron.js Developer";
 const description =
-  "Explore development services offered by Hasnain Alam — MERN Stack web apps, React Native mobile apps, and Electron.js desktop applications.";
+  "Hire Hasnain Alam for MERN Stack & Next.js web development, React Native mobile apps, and Electron.js desktop applications — built for businesses worldwide.";
 
 const Services = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "@id": `${pageUrl}/#services`,
-    url: pageUrl,
-    name: title,
-    description: description,
-    isPartOf: { "@id": `${domain}/#website` },
-    about: { "@id": `${domain}/#person` },
-    hasPart: serviceArray?.map((svc) => ({
-      "@type": "Service",
-      name: svc.title,
-      url: `${domain}/services/${svc.slug}`,
-      description: svc.shortDesc,
-      provider: { "@id": `${domain}/#person` },
-      areaServed: "Worldwide",
-    })),
-  };
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}/#services`,
+      url: pageUrl,
+      name: title,
+      description: description,
+      isPartOf: { "@id": `${domain}/#website` },
+      about: { "@id": `${domain}/#person` },
+      hasPart: serviceArray?.map((svc) => ({
+        "@type": "Service",
+        "@id": `${domain}/services/${svc.slug}/#service`,
+        name: svc.title,
+        url: `${domain}/services/${svc.slug}`,
+        description: svc.shortDesc,
+        provider: { "@id": `${domain}/#person` },
+        areaServed: "Worldwide",
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}/#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: domain,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="website" />
@@ -60,11 +85,12 @@ const Services = () => {
       <div className="space-y-10 text-gray-300 font-light leading-relaxed sm:text-base max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         <section className="border-b border-gray-900 pb-8 mb-12 pt-28">
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 text-center">
-            My Services
+            MERN Stack &amp; Next.js Development Services
           </h1>
           <p className="text-center text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-            End-to-end development services across web, mobile, and desktop
-            platforms — built with modern, scalable tech stacks.
+            End-to-end development services across web, mobile, and desktop —
+            built with MERN Stack, Next.js, React Native, and Electron.js for
+            businesses worldwide.
           </p>
         </section>
 

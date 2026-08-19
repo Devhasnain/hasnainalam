@@ -1,45 +1,70 @@
 import ToolCard from "@/components/ToolCard";
 import { tools } from "@/constants/tools";
+import Link from "next/link";
 import Head from "next/head";
 
 
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/tools`;
-const title = "Free Online Tools | Hasnain Alam - Full-Stack MERN Developer";
+const title = "Free Online Developer Tools | Hasnain Alam";
 const description =
   "Free, fast, browser-based tools for developers and writers — word counter, JSON formatter, case converter and more. No sign-up required.";
 
 const Tools = () => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "@id": `${pageUrl}/#tools`,
-    url: pageUrl,
-    name: title,
-    description: description,
-    isPartOf: { "@id": `${domain}/#website` },
-    author: { "@id": `${domain}/#person` },
-    hasPart: tools.map((tool) => ({
-      "@type": "SoftwareApplication",
-      name: tool.name,
-      url: `${domain}/tools/${tool.slug}`,
-      applicationCategory: tool.category,
-      description: tool.shortDescription,
-      operatingSystem: "Any",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "USD",
-      },
-    })),
-  };
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}/#tools`,
+      url: pageUrl,
+      name: title,
+      description: description,
+      isPartOf: { "@id": `${domain}/#website` },
+      author: { "@id": `${domain}/#person` },
+      hasPart: tools.map((tool) => ({
+        "@type": "SoftwareApplication",
+        name: tool.name,
+        url: `${domain}/tools/${tool.slug}`,
+        applicationCategory: tool.category,
+        description: tool.shortDescription,
+        operatingSystem: "Any",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}/#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: domain,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Tools",
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="website" />
@@ -84,6 +109,25 @@ const Tools = () => {
               <ToolCard key={tool.slug} tool={tool} />
             ))}
           </div>
+        </section>
+
+        <section className="border-t border-gray-900 pt-10 text-center">
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+            Built by{" "}
+            <Link href="/about" className="text-blue-400 hover:text-blue-300 font-medium">
+              Hasnain Alam
+            </Link>
+            , a Full-Stack MERN &amp; Next.js Developer. Need something more
+            than a free tool —{" "}
+            <Link href="/services" className="text-blue-400 hover:text-blue-300 font-medium">
+              explore development services
+            </Link>{" "}
+            or{" "}
+            <Link href="/contact" className="text-blue-400 hover:text-blue-300 font-medium">
+              get in touch
+            </Link>
+            .
+          </p>
         </section>
       </div>
     </>

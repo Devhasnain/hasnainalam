@@ -6,53 +6,79 @@ import Head from "next/head";
 
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/blog`;
-const title = "Blog | Hasnain Alam - Full-Stack MERN Developer";
+const title = "Blog | MERN Stack & Next.js Developer Insights | Hasnain Alam";
 const description =
-  "Insights and technical articles on MERN Stack, Next.js, React Native, and Electron.js development, covering performance, architecture, and SEO best practices.";
+  "Tutorials and technical articles on MERN Stack, Next.js, React Native, and Electron.js development — covering performance, architecture, and real-world implementation.";
 
 type Props = {
   posts: any[];
 };
 
 const Blog = ({ posts }: Props) => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": `${pageUrl}/#blog`,
-    url: pageUrl,
-    name: title,
-    description: description,
-    isPartOf: { "@id": `${domain}/#website` },
-    author: { "@id": `${domain}/#person` },
-    blogPost: posts?.map((post) => ({
-      "@type": "BlogPosting",
-      headline: post.title,
-      url: `${domain}/blog/${post.slug}`,
-      image:
-        post.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam.png`,
-      datePublished: post.date,
+  const schema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": `${pageUrl}/#blog`,
+      url: pageUrl,
+      name: title,
+      description: description,
+      isPartOf: { "@id": `${domain}/#website` },
       author: { "@id": `${domain}/#person` },
-    })),
-  };
+      blogPost: posts?.map((post) => ({
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.excerpt?.replace(/<[^>]*>/g, "").slice(0, 160),
+        url: `${domain}/blog/${post.slug}`,
+        image:
+          post.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam.png`,
+        datePublished: post.date,
+        author: { "@id": `${domain}/#person` },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": `${pageUrl}/#breadcrumb`,
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: domain,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: pageUrl,
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${domain}/Hasnain-alam-og-image.png`} />
+        <meta property="og:image" content={`${domain}/Hasnain-alam-og-image.webp`} />
         <meta property="og:site_name" content="Hasnain Alam Portfolio" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`${domain}/Hasnain-alam-og-image.png`} />
+        <meta name="twitter:image" content={`${domain}/Hasnain-alam-og-image.webp`} />
         <link rel="icon" href="/favicon.png" />
 
         <script
@@ -64,8 +90,13 @@ const Blog = ({ posts }: Props) => {
       <div className="space-y-10 text-gray-300 font-light leading-relaxed sm:text-base max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  pb-20">
         <section className="border-b border-gray-900 pb-8 mb-12 pt-28">
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 text-center">
-            My Blog
+            MERN Stack &amp; Next.js Developer Blog
           </h1>
+          <p className="text-center text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
+            Practical tutorials and guides on MERN Stack, Next.js, React
+            Native, and Electron.js development — written from real project
+            experience, not theory.
+          </p>
         </section>
 
         <section>
@@ -87,10 +118,11 @@ const Blog = ({ posts }: Props) => {
           ) : (
             <div className="text-center py-12 bg-gray-950/20 border border-gray-900 rounded-2xl">
               <div className="text-2xl text-gray-600 mb-2">
-                No Publication Found
+                No Articles Yet
               </div>
               <p className="text-gray-500 text-xs">
-                Try different key phrases to discover tactical knowledge.
+                New MERN Stack and Next.js tutorials are on the way — check
+                back soon.
               </p>
             </div>
           )}

@@ -3,9 +3,11 @@ import Head from "next/head";
 
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/privacy-policy`;
-const title = "Privacy Policy | Hasnain Alam - Full-Stack Developer";
+const title = "Privacy Policy | Hasnain Alam";
 const description =
-  "Privacy Policy detailing data processing practices, application state management, and platform security standards across Web, Mobile (React Native), and Desktop (Electron.js) software.";
+  "Privacy Policy for hasnainalam.com, covering how data is collected and handled across the website, contact forms, and any linked web, mobile, or desktop applications.";
+const lastUpdated = "August 20, 2026"; // update this date whenever the policy actually changes
+const contactEmail = "hasnainalam1166@gmail.com"; // keep in sync with the Contact page
 
 const schema = {
   "@context": "https://schema.org",
@@ -22,6 +24,7 @@ const schema = {
   },
   inLanguage: "en",
   primaryImageOfPage: `${domain}/Hasnain-alam.png`,
+  dateModified: "2026-08-20",
 };
 
 export default function PrivacyPolicy() {
@@ -31,7 +34,10 @@ export default function PrivacyPolicy() {
         {/* Basic SEO */}
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         {/* Open Graph (Facebook, LinkedIn, WhatsApp preview) */}
@@ -39,14 +45,14 @@ export default function PrivacyPolicy() {
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={`${domain}/Hasnain-alam-og-image.png`} />
+        <meta property="og:image" content={`${domain}/Hasnain-alam-og-image.webp`} />
         <meta property="og:site_name" content="Hasnain Alam Portfolio" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`${domain}/Hasnain-alam-og-image.png`} />
+        <meta name="twitter:image" content={`${domain}/Hasnain-alam-og-image.webp`} />
 
         {/* Language */}
         <meta httpEquiv="content-language" content="en" />
@@ -58,42 +64,40 @@ export default function PrivacyPolicy() {
         />
       </Head>
 
-      {/* Background Subtle Glow Accent */}
-      {/* <div className="absolute top-12 left-1/2 -translate-x-1/2 w-72 h-72 bg-blue-500/5 rounded-full blur-[100px] pointer-events-none -z-10" /> */}
-
       <div className="space-y-10 text-gray-300 font-light leading-relaxed sm:text-base max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  pb-20">
 
       <section className="border-b border-gray-900 pb-8 mb-12 pt-28">
         <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 text-center">
           Privacy Policy
         </h1>
+        <p className="text-center text-gray-500 text-sm">
+          Last updated: {lastUpdated}
+        </p>
       </section>
 
         {/* Section 1 */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-            <span className="text-blue-500 text-lg">01.</span> Scope of Digital
-            Platforms
+            <span className="text-blue-500 text-lg">01.</span> What This Policy Covers
           </h2>
           <p>
-            This Privacy Policy applies to the data architectures of the
-            following multi-platform software systems showcased or
-            distributed through my professional portfolio:
+            This Privacy Policy explains how data is collected and used on
+            hasnainalam.com and any linked projects, including:
           </p>
           <ul className="list-disc pl-6 space-y-2 text-gray-400 text-sm">
             <li>
-              <strong>MERN & Next.js Platforms:</strong> Dynamic web
-              applications utilizing server-side rendering and cloud database
-              layers.
+              <strong>This website:</strong> hasnainalam.com, including the
+              contact form and any pages built with Next.js.
             </li>
             <li>
-              <strong>React Native Apps:</strong> Mobile systems that request
-              user hardware permissions and execute local cross-platform
-              caching.
+              <strong>Linked React Native apps:</strong> Mobile projects
+              showcased in the portfolio that may request device permissions
+              such as camera, location, or notifications.
             </li>
             <li>
-              <strong>Electron.js Clients:</strong> Cross-platform desktop
-              applications operating under sandboxed, OS-level boundaries.
+              <strong>Linked Electron.js apps:</strong> Desktop projects
+              showcased in the portfolio that may access local files or
+              system-level features on the user's machine.
             </li>
           </ul>
         </section>
@@ -101,29 +105,29 @@ export default function PrivacyPolicy() {
         {/* Section 2 */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-            <span className="text-blue-500 text-lg">02.</span> Information
-            Collection & Core Utilities
+            <span className="text-blue-500 text-lg">02.</span> What Information Is Collected
           </h2>
           <p>
-            My primary focus is performance optimization, which is why data
-            collection is kept to minimal, necessary parameters across all
-            applications:
+            Data collection on this site is limited to what's genuinely
+            needed for it to function:
           </p>
           <div className="bg-gray-950/40 p-5 rounded-2xl border border-gray-900 space-y-3 text-sm text-gray-400">
             <p>
-              <strong>A. User-Provided Data:</strong> When you use contact
-              forms or authentication modules, your explicit identifier data
-              (such as name, email address, and message context) is relayed
-              to dynamic endpoints in strictly encrypted, standard JSON
-              formats.
+              <strong>A. Information you provide directly:</strong> When you
+              use the contact form, the name, email address, and message you
+              submit are sent securely to process your inquiry. This
+              information is used only to respond to you — it is not sold,
+              shared with third parties for marketing, or added to a mailing
+              list.
             </p>
             <p>
-              <strong>B. Mobile & Desktop Native Hardware:</strong> Under
-              React Native and Electron.js frameworks, local client memory
-              handles, offline state configurations (Zustand/SQLite storage),
-              and basic machine logging are not accessed until explicit
-              dynamic permission is granted through the native OS
-              permission dialog.
+              <strong>B. Mobile and desktop app permissions:</strong> React
+              Native and Electron.js projects linked from this portfolio may
+              request access to device features (like camera, location, file
+              system, or notifications). These permissions are only requested
+              when needed for that specific app's functionality, and only
+              after you explicitly grant them through your device's native
+              permission prompt.
             </p>
           </div>
         </section>
@@ -131,50 +135,65 @@ export default function PrivacyPolicy() {
         {/* Section 3 */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-            <span className="text-blue-500 text-lg">03.</span> State Storage &
-            Security Infrastructure
+            <span className="text-blue-500 text-lg">03.</span> How Data Is Stored & Secured
           </h2>
           <p>
-            Modern cloud infrastructure standards are used to process and
-            secure all collected data elements:
+            Any data submitted through this site is handled with standard
+            security practices:
           </p>
           <p>
-            Backend data processing relies on strictly validated schemas
-            (MongoDB/PostgreSQL connections), and all data in transit is
-            routed over Secure Socket Layers (HTTPS/WSS pipelines). Electron
-            applications enforce context isolation to block remote script
-            injection, ensuring maximum security validation.
+            All data sent to and from this site is encrypted in transit over
+            HTTPS. Where a database is used to process form submissions
+            (such as MongoDB or PostgreSQL), input is validated before it's
+            stored. Desktop applications built with Electron.js enforce
+            context isolation, which prevents untrusted scripts from
+            accessing sensitive system-level APIs.
           </p>
         </section>
 
         {/* Section 4 */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-            <span className="text-blue-500 text-lg">04.</span> Cookies and
-            Tracking Telemetry
+            <span className="text-blue-500 text-lg">04.</span> Cookies & Analytics
           </h2>
           <p>
-            On Next.js platforms, minimal local analytical tracers may be
-            used to evaluate performance metrics and monitor SEO parameters.
-            You can customize or fully clear storage parameters through your
-            browser&apos;s preference and privacy controls.
+            This site may use privacy-respecting analytics tools (such as
+            Google Analytics or Vercel Analytics) to understand general site
+            traffic and performance — for example, which pages are visited
+            and how the site is performing for users. This data is
+            aggregated and is not used to personally identify you. You can
+            disable cookies at any time through your browser's privacy
+            settings, and the site will continue to function normally.
           </p>
         </section>
 
         {/* Section 5 */}
         <section className="space-y-4">
           <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-            <span className="text-blue-500 text-lg">05.</span> Developer
-            Coordinates
+            <span className="text-blue-500 text-lg">05.</span> Third-Party Services
           </h2>
           <p>
-            For any queries related to this statement, runtime processing
-            models, or my personal portfolio repositories, you can reach out
-            through the direct contact form or the email address below:
+            Contact form submissions and site hosting may pass through
+            trusted third-party service providers (such as email delivery
+            services or cloud hosting platforms) solely to make the site and
+            contact form function. These providers are not authorized to use
+            your data for any purpose beyond delivering that service.
+          </p>
+        </section>
+
+        {/* Section 6 */}
+        <section className="space-y-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight flex items-center gap-3">
+            <span className="text-blue-500 text-lg">06.</span> Contact
+          </h2>
+          <p>
+            If you have any questions about this Privacy Policy or how your
+            data is handled, reach out through the contact form or the email
+            address below:
           </p>
           <div className="p-4 bg-blue-500/5 border border-blue-500/20 rounded-xl w-max">
             <p className="text-sm font-semibold text-blue-400 font-mono">
-              Email Routing Node: hasnain.alam@example.com
+              {contactEmail}
             </p>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import axiosInstance from "@/services/axiosInstance";
 import React, { useState } from "react";
+import Link from "next/link";
 import axios from "axios";
 
 
@@ -37,18 +38,19 @@ export default function Contact() {
         <div className="lg:col-span-5 space-y-6">
           <div className="flex items-center space-x-3">
             <span className="text-blue-500 font-semibold tracking-widest text-xs uppercase">
-              Contact Core
+              Contact &amp; Core
             </span>
-            <div className="w-8 h-1px bg-blue-500" />
+            <div className="w-8 h-px bg-blue-500" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Let&apos;s Architect Your Vision
+            Hire a MERN Stack &amp; Next.js Developer
           </h2>
-          <p className="text-gray-400 leading-relaxed font-light">
-            Have a startup idea, product prototype, mobile interface, or desktop
-            integration system you&apos;d like to discuss? Share your project
-            details and let&apos;s start building with efficient,
-            production-ready performance in mind.
+          <p className="text-gray-300 leading-relaxed font-light">
+            Have a startup idea, SaaS product, mobile app, or desktop
+            application you&apos;d like to build? I work with businesses
+            worldwide as a MERN Stack, Next.js, React Native, and Electron.js
+            developer — share your project details and let&apos;s start
+            building.
           </p>
 
           <div className="space-y-4 pt-4">
@@ -73,9 +75,12 @@ export default function Contact() {
                 <h4 className="text-sm font-semibold text-gray-300">
                   Direct Email Channels
                 </h4>
-                <p className="text-sm text-gray-400">
-                  hasnain.alam@example.com
-                </p>
+                <Link
+                  href="mailto:hasnainalam1166@gmail.com"
+                  className="text-sm text-gray-300 hover:text-blue-400 transition-colors font-mono"
+                >
+                  contact@hasnainalam.com
+                </Link>
               </div>
             </div>
 
@@ -106,7 +111,7 @@ export default function Contact() {
                 <h4 className="text-sm font-semibold text-gray-300">
                   Geographical Scope
                 </h4>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-300">
                   Karachi, Sindh, Pakistan (Open to Global Remote / Relocation)
                 </p>
               </div>

@@ -22,7 +22,7 @@ const ServiceCard = ({ svc }: Props) => {
           {svc.title}
         </Link>
       </h3>
-      <p className="text-gray-400 text-sm leading-relaxed font-light">
+      <p className="text-gray-300 text-sm leading-relaxed font-light">
         {svc.shortDesc}
       </p>
       <Link

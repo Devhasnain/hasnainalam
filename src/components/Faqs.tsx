@@ -10,17 +10,19 @@ const Faqs = () => {
       className="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto z-10 relative"
     >
       <div className="text-center mb-16">
-        <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-3 py-1 mb-3">
-          <span className="text-xs font-semibold text-blue-400 uppercase tracking-widest">
-            FAQ Hub
+        <div className="flex items-center justify-center space-x-3">
+          <span className="text-blue-500 font-semibold tracking-widest text-xs uppercase">
+            FAQ's
           </span>
+          <div className="w-8 h-px bg-blue-500" />
         </div>
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Technical Architecture FAQs
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          MERN Stack &amp; Next.js Developer FAQs
         </h2>
-        <p className="text-gray-500 text-sm mt-4 font-light">
-          Common questions about my development approach, technical decisions,
-          and cross-platform framework handling.
+        <p className="text-gray-300 text-base mt-4 font-light">
+          Common questions about hiring a MERN Stack, Next.js, React Native, and
+          Electron.js developer — covering my process, tech stack, and approach
+          to building production-ready applications.
         </p>
       </div>
 

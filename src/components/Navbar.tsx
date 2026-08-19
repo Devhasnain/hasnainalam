@@ -13,7 +13,7 @@ const Navbar = ({ className }: Props) => {
 
   return (
     <header className={`${className}`}>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-[#080b13]/85 backdrop-blur-xl border-b border-gray-900/80 transition-all duration-300">
+      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl border-b border-gray-900/80 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo Image */}

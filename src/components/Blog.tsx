@@ -16,20 +16,20 @@ const Blog = ({ posts }: Props) => {
         id="blog"
         className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
       >
-        <div className="mb-16">
+        <div className="mb-16 space-y-6">
             <div className="flex items-center space-x-3">
               <span className="text-blue-500 font-semibold tracking-widest text-xs uppercase">
-                Knowledge Stack
+                Blog &amp; Insights
               </span>
               <div className="w-8 h-px bg-blue-500" />
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-2">
-              Publications & Insights
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+              MERN Stack &amp; Next.js Development Blog
             </h2>
-            <p className="text-gray-500 text-sm mt-3 max-w-xl font-light">
-              Engaging architectural thoughts written with SEO optimization rules
-              in mind to explore performance solutions, client acquisition, and
-              native interfaces.
+            <p className="text-gray-300 text-base mt-3 max-w-xl font-light">
+              Practical tutorials and guides on MERN Stack, Next.js, React
+              Native, and Node.js development — covering performance,
+              backend architecture, and real-world implementation.
             </p>
         </div>
 

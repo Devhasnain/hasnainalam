@@ -40,7 +40,7 @@ const Accordion = ({ q, a }: Props) => {
                     : "max-h-0 opacity-0 pointer-events-none"
                 }`}
               >
-                <p className="text-gray-400 text-sm leading-relaxed font-light">
+                <p className="text-gray-300 text-base leading-relaxed font-light">
                   {a}
                 </p>
               </div>

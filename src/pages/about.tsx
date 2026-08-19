@@ -5,9 +5,9 @@ import Head from "next/head";
 
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/about`;
-const title = "About Hasnain Alam | Multi-Platform Software Engineer";
+const title = "About Hasnain Alam | Full-Stack MERN & Next.js Developer";
 const description =
-  "Learn more about Hasnain Alam, a specialized Full-Stack Developer leveraging Next.js/MERN stack, React Native, and Electron.js to build high-performance applications.";
+  "Learn about Hasnain Alam, a Full-Stack Developer specializing in MERN Stack, Next.js, React Native, and Electron.js — building high-performance web, mobile, and desktop applications for businesses worldwide.";
 const imageUrl = `${domain}/Hasnain-alam-og-image.webp`;
 
 export default function AboutPage() {
@@ -19,21 +19,7 @@ export default function AboutPage() {
     name: title,
     description,
     isPartOf: { "@id": `${domain}/#website` },
-    mainEntity: {
-      "@type": "Person",
-      "@id": `${domain}/#person`,
-      name: "Hasnain Alam",
-      url: domain,
-      image: `${domain}/Hasnain-alam.png`,
-      jobTitle: "Full-Stack MERN Developer",
-      description:
-        "Full-Stack Developer specializing in MERN Stack, Next.js, React Native, Electron.js, NestJS, TypeScript, Node.js and MongoDB.",
-      sameAs: [
-        "https://github.com/devhasnain",
-        "https://www.linkedin.com/in/devhasnain",
-        "https://fiverr.com/hasnainalam462",
-      ],
-    },
+    mainEntity: { "@id": `${domain}/#person` },
   };
 
   return (
@@ -41,7 +27,10 @@ export default function AboutPage() {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="profile" />
@@ -76,7 +65,7 @@ export default function AboutPage() {
             <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 rounded-md px-3 py-1">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest">
-                Architect Profile
+                Developer Profile
               </span>
             </div>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-none">
@@ -86,9 +75,9 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-gray-400 text-lg sm:text-xl font-light leading-relaxed max-w-2xl">
-              A software engineer dedicated to building hyper-optimized
-              application platforms spanning web ecosystems, cross-platform
-              mobile environments, and secure desktop boundaries.
+              A Full-Stack MERN &amp; Next.js Developer building
+              high-performance web applications, React Native mobile apps, and
+              Electron.js desktop software for businesses worldwide.
             </p>
 
             {/* Quick stats row - adds scannable content + SEO-friendly keywords */}
@@ -125,8 +114,8 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-linear-to-t from-blue-500/10 via-transparent to-transparent opacity-80 z-10" />
               <Image
                 src="/Hasnain-alam.png"
-                alt="Hasnain Alam - Full-Stack MERN, React Native & Electron.js Developer"
-                title="Hasnain Alam - Full-Stack MERN, React Native & Electron.js Developer"
+                alt="Hasnain Alam - Full-Stack MERN & Next.js Developer"
+                title="Hasnain Alam - Full-Stack MERN & Next.js Developer"
                 fill
                 sizes="176px"
                 className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
@@ -142,87 +131,117 @@ export default function AboutPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
                 <span className="text-blue-500 font-mono text-xl">01.</span>{" "}
-                Professional Mission
+                What I Do
               </h2>
               <p>
-                I specialize in breaking down complex architectural constraints
-                into maintainable, production-ready systems. Operating at the
-                intersection of robust backend servers and highly interactive
-                user interfaces, my objective is to engineer digital portals
-                that achieve low-latency performance with exceptional structural
-                code fidelity.
+                I&apos;m a Full-Stack Developer specializing in the MERN Stack
+                (MongoDB, Express.js, React.js, Node.js) and Next.js. I help
+                businesses turn ideas into production-ready web applications
+                with clean, maintainable code and fast, SEO-friendly performance
+                — using TypeScript across the stack for type safety and fewer
+                bugs in production.
               </p>
               <p>
-                By treating type-safety as a foundational rule rather than an
-                option, I design systems that scale elegantly across distributed
-                microservices and native client applications without
-                fragmentation.
+                Beyond the web, I build cross-platform mobile apps with React
+                Native and secure native desktop software with Electron.js, so
+                clients get one developer who can deliver a complete product
+                across every platform.
               </p>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                <span className="text-blue-500 font-mono text-xl">02.</span>{" "}
-                Core Multi-Platform Framework Breakdown
+                <span className="text-blue-500 font-mono text-xl">02.</span> My
+                Core Development Stack
               </h2>
               <p>
-                To maintain absolute coverage across standard operational
-                systems, my engineering matrix is systematically split into
-                three isolated core configurations:
+                I work across three main platforms, each with its own
+                specialized toolset:
               </p>
 
               <div className="space-y-4 pt-2">
                 <div className="p-5 bg-gray-950/40 border border-gray-900 rounded-xl hover:border-blue-500/20 transition-colors">
                   <h3 className="text-base font-bold text-white mb-1">
-                    MERN & Next.js Full-Stack Architecture
+                    MERN Stack &amp; Next.js Web Development
                   </h3>
-                  <p className="text-xs text-gray-400">
-                    Engineering robust RESTful APIs and real-time socket
-                    channels powered by Node.js, Express, and MongoDB or
-                    PostgreSQL clusters. On the frontend layer, I deploy dynamic
-                    Next.js applications optimized for advanced Server-Side
-                    Rendering (SSR) and crawlable layouts.
+                  <p className="text-sm text-gray-400">
+                    I build RESTful APIs and real-time features with Node.js,
+                    Express, and MongoDB or PostgreSQL. On the frontend, I use
+                    Next.js for Server-Side Rendering (SSR) and Static Site
+                    Generation (SSG), giving every application fast load times
+                    and search-engine-friendly, crawlable pages.
                   </p>
+                  <Link
+                    href={`/services/mern-stack-development`}
+                    aria-label={`Read more about Mern Stack Next.js Web Development service`}
+                    className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1 group/btn mt-5"
+                  >
+                    <span>Read more</span>
+                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-200">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
 
                 <div className="p-5 bg-gray-950/40 border border-gray-900 rounded-xl hover:border-cyan-500/20 transition-colors">
                   <h3 className="text-base font-bold text-white mb-1">
-                    React Native Mobile Engineering
+                    React Native Mobile App Development
                   </h3>
-                  <p className="text-xs text-gray-400">
-                    Compiling beautiful, high-framerate fluid systems for iOS
-                    and Android environments. Utilizing native animation
-                    frameworks, isolated atomic storage containers, and
-                    streamlined payload rendering patterns to defeat memory
-                    leakage.
+                  <p className="text-sm text-gray-400">
+                    As a React Native developer, I build smooth, high-framerate
+                    apps for iOS and Android from a single codebase, using
+                    native animation libraries and optimized list rendering to
+                    avoid lag and memory leaks.
                   </p>
+                   <Link
+                    href={`/services/react-native-development`}
+                    aria-label={`Read more about React native App Development service`}
+                    className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1 group/btn mt-5"
+                  >
+                    <span>Read more</span>
+                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-200">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
 
                 <div className="p-5 bg-gray-950/40 border border-gray-900 rounded-xl hover:border-purple-500/20 transition-colors">
                   <h3 className="text-base font-bold text-white mb-1">
-                    Electron.js Desktop Software
+                    Electron.js Desktop App Development
                   </h3>
-                  <p className="text-xs text-gray-400">
-                    Building cross-platform secure native desktop applications
-                    for Windows, macOS, and Linux. Enforcing strict security
-                    protocols, contextual runtime separation, and optimized
-                    multi-process IPC message loops.
+                  <p className="text-sm text-gray-400">
+                    As an Electron.js developer, I build secure, cross-platform
+                    desktop applications for Windows, macOS, and Linux, with
+                    strict security practices like context isolation and
+                    validated IPC communication between processes.
                   </p>
+                   <Link
+                    href={`/services/electron-desktop-development`}
+                    aria-label={`Read more about Electron Desktop Development service`}
+                    className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1 group/btn mt-5"
+                  >
+                    <span>Read more</span>
+                    <span className="inline-block group-hover/btn:translate-x-1 transition-transform duration-200">
+                      &rarr;
+                    </span>
+                  </Link>
                 </div>
               </div>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-white tracking-tight flex items-center gap-3">
-                <span className="text-blue-500 font-mono text-xl">03.</span>{" "}
-                Architectural Principles
+                <span className="text-blue-500 font-mono text-xl">03.</span> How
+                I Build
               </h2>
               <p>
-                Every software layer I compile is governed by structured
-                developmental workflows: strict context isolation to mitigate
-                security vulnerabilities, strategic asynchronous caching queries
-                to prevent client runtime lag, and declarative UI states to
-                preserve micro-interactions across variable frame rates.
+                Every project follows the same principles: strict security
+                practices to prevent vulnerabilities, efficient caching and
+                state management to keep apps fast, and clean, well-structured
+                UI code that stays maintainable as the product grows. Whether
+                it&apos;s a MERN stack web app, a React Native mobile app, or an
+                Electron.js desktop app, the goal is always production-ready
+                code that performs.
               </p>
             </section>
           </div>
@@ -231,44 +250,44 @@ export default function AboutPage() {
           <div className="lg:col-span-4 space-y-8">
             <div className="p-6 bg-gray-950/60 border border-gray-900 rounded-2xl space-y-4">
               <h3 className="text-sm font-bold text-white uppercase tracking-widest border-b border-gray-900 pb-2">
-                Technical Matrix
+                Tech Stack Summary
               </h3>
 
               <div className="space-y-3 font-mono text-xs">
                 <div>
-                  <span className="text-gray-500 block">Core Identity:</span>
+                  <span className="text-gray-500 block">Name:</span>
                   <span className="text-gray-200 font-semibold">
                     Hasnain Alam
                   </span>
                 </div>
                 <div>
-                  <span className="text-gray-500 block">Focus Node:</span>
+                  <span className="text-gray-500 block">Role:</span>
                   <span className="text-blue-400 font-semibold">
-                    Full-Stack Cross-Platform
+                    Full-Stack MERN &amp; Next.js Developer
                   </span>
                 </div>
                 <div>
-                  <span className="text-gray-500 block">
-                    Primary Web Stack:
-                  </span>
+                  <span className="text-gray-500 block">Web Stack:</span>
                   <span className="text-gray-200">
                     Next.js / TypeScript / Node.js
                   </span>
                 </div>
                 <div>
-                  <span className="text-gray-500 block">
-                    Database Handlers:
-                  </span>
+                  <span className="text-gray-500 block">Databases:</span>
                   <span className="text-gray-200">MongoDB / PostgreSQL</span>
                 </div>
                 <div>
-                  <span className="text-gray-500 block">Mobile Pipeline:</span>
-                  <span className="text-cyan-400">React Native Engine</span>
+                  <span className="text-gray-500 block">Mobile:</span>
+                  <span className="text-cyan-400">React Native Developer</span>
                 </div>
                 <div>
-                  <span className="text-gray-500 block">Desktop Frame:</span>
-                  <span className="text-purple-400">
-                    Electron.js Architecture
+                  <span className="text-gray-500 block">Desktop:</span>
+                  <span className="text-purple-400">Electron.js Developer</span>
+                </div>
+                <div>
+                  <span className="text-gray-500 block">Availability:</span>
+                  <span className="text-gray-200">
+                    Freelance &amp; Full-Time, Worldwide
                   </span>
                 </div>
               </div>
@@ -276,18 +295,18 @@ export default function AboutPage() {
 
             <div className="p-6 bg-linear-to-br from-blue-950/20 to-transparent border border-blue-950 rounded-2xl space-y-4 text-center">
               <h3 className="text-base font-bold text-white">
-                Need an Enterprise Solution?
+                Need a MERN or Next.js Developer?
               </h3>
               <p className="text-xs text-gray-400 leading-relaxed">
-                Whether you require an automated SaaS web platform, a fast
-                native mobile app, or an offline desktop ecosystem, let&apos;s
-                map out your parameters.
+                Whether you need a SaaS web platform, a React Native mobile app,
+                or an Electron.js desktop app, let&apos;s talk about your
+                project.
               </p>
               <Link
                 href="/contact"
                 className="block w-full py-3 bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold rounded-xl text-xs uppercase tracking-wider shadow-md transition-all"
               >
-                Initiate Consultation
+                Get In Touch
               </Link>
             </div>
           </div>

@@ -8,15 +8,14 @@ import axios from "axios";
 const domain = "https://hasnainalam.com";
 const pageUrl = `${domain}/contact`;
 const title =
-  "Contact Hasnain Alam | Hire MERN, React Native & Electron Developer";
+  "Contact Hasnain Alam | Hire MERN Stack & Next.js Developer";
 const description =
-  "Get in touch with Hasnain Alam for freelance, remote, or full-time software engineering projects involving Next.js, MERN stack, React Native mobile apps, and Electron.js desktop software.";
+  "Get in touch with Hasnain Alam for freelance, remote, or full-time software engineering projects — MERN Stack, Next.js, React Native mobile apps, and Electron.js desktop software, worldwide.";
 const imageUrl = `${domain}/Hasnain-alam.png`;
+const contactEmail = "hasnainalam1166@gmail.com"; // confirm this is the correct, monitored address
 
 export default function ContactPage() {
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       try {
@@ -58,7 +57,10 @@ export default function ContactPage() {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="robots" content="index, follow" />
+        <meta
+          name="robots"
+          content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="website" />
@@ -93,19 +95,19 @@ export default function ContactPage() {
           <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5">
             <span className="w-2 h-2 rounded-full bg-blue-400 animate-ping" />
             <span className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest">
-              Connect Node
+              Get In Touch
             </span>
           </div>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
-            Let&apos;s Build Something{" "}
+            Hire a MERN Stack &amp; Next.js{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-300 to-white">
-              Exceptional
+              Developer
             </span>
           </h1>
           <p className="text-gray-500 text-sm sm:text-base font-light max-w-2xl mx-auto">
-            Have an enterprise application to build, a legacy codebase to
-            migrate, or a cross-platform pipeline to optimize? Drop your
-            specifications below.
+            Have a web app to build, a legacy codebase to migrate, or a
+            mobile/desktop product to ship? Tell me about your project below
+            and I&apos;ll get back to you.
           </p>
         </header>
 
@@ -114,7 +116,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-8">
             <div className="bg-gray-950/40 border border-gray-900 rounded-2xl p-6 space-y-6 shadow-xl">
               <h2 className="text-xl font-bold text-white tracking-tight border-b border-gray-900 pb-3">
-                Direct Contact Hub
+                Contact Details
               </h2>
 
               <div className="space-y-4">
@@ -124,13 +126,13 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500">
-                      Official Routing
+                      Email
                     </h3>
                     <Link
-                      href="mailto:hasnainalam1166@gmail.com"
+                      href={`mailto:${contactEmail}`}
                       className="text-sm text-gray-200 hover:text-blue-400 transition-colors font-mono"
                     >
-                      contact@hasnainalam.com
+                      {contactEmail}
                     </Link>
                   </div>
                 </div>
@@ -141,11 +143,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500">
-                      Current Availability
+                      Availability
                     </h3>
                     <p className="text-sm text-gray-200 font-light">
-                      Open for Freelance Contracts, Remote Engagements, &
-                      Architecture Consultations.
+                      Open for freelance contracts, remote roles, and
+                      full-time opportunities — worldwide.
                     </p>
                   </div>
                 </div>
@@ -154,13 +156,12 @@ export default function ContactPage() {
 
             <div className="p-6 bg-linear-to-br from-gray-950/60 to-gray-950/20 border border-gray-900/80 rounded-2xl space-y-3">
               <h3 className="text-xs font-bold text-blue-400 uppercase tracking-widest font-mono">
-                Deployment Matrix Note
+                A Note on Privacy
               </h3>
               <p className="text-xs text-gray-400 font-light leading-relaxed">
-                All client transmissions are securely handled. Form schemas
-                validate endpoints using custom TypeScript validation
-                constraints to ensure input parameters meet security standards
-                before database injection.
+                Your information is submitted securely and used only to
+                respond to your message — it&apos;s never shared or added to
+                a mailing list.
               </p>
             </div>
           </div>
@@ -226,15 +227,14 @@ export default function ContactPage() {
                   htmlFor="message"
                   className="text-xs font-bold uppercase tracking-wider text-gray-400 block"
                 >
-                  Project Scope Parameters{" "}
-                  <span className="text-blue-500">*</span>
+                  Project Details <span className="text-blue-500">*</span>
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={5}
                   required
-                  placeholder="Outline your application specifications, timeline targets, or integration rules..."
+                  placeholder="Tell me about your project, timeline, and any specific requirements..."
                   className="w-full bg-gray-900/50 border border-gray-800 focus:border-blue-500/50 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-600 focus:outline-none transition-colors resize-none leading-relaxed"
                 />
               </div>
@@ -244,9 +244,7 @@ export default function ContactPage() {
                 disabled={status === "loading"}
                 className="w-full py-4 bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-xl text-xs font-bold uppercase tracking-widest shadow-lg shadow-blue-600/10 hover:shadow-blue-500/20 transition-all duration-200 transform hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {status === "loading"
-                  ? "Dispatching..."
-                  : "Dispatch Specifications →"}
+                {status === "loading" ? "Sending..." : "Send Message →"}
               </button>
 
               {status === "success" && (
