@@ -140,11 +140,6 @@ const BlogDetail = ({ post }: Props) => {
               "prose-strong:font-semibold",
               "prose-a:text-white",
             )}
-            // className="prose pt-6 text-gray-300 font-light leading-relaxed space-y-6
-            //   prose-headings:text-white prose-headings:font-bold prose-headings:tracking-tight
-            //   prose-h2:text-2xl prose-h2:pt-4 prose-h3:text-xl prose-h3:text-blue-400
-            //   prose-p:text-sm sm:prose-p:text-base prose-p:leading-relaxed
-            //   prose-strong:text-white prose-strong:font-semibold"
             dangerouslySetInnerHTML={{ __html: post?.content }}
           />
 

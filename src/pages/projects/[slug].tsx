@@ -18,12 +18,14 @@ const ProjectDetail = ({ project }: Props) => {
   const pageUrl = `${domain}/projects/${project.slug}`;
   const cleanExcerpt = stripHtml(project?.excerpt);
   const imageUrl =
-    project?.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam-projects-cover.webp`;
+    project?.featuredImage?.node?.sourceUrl ||
+    `${domain}/Hasnain-alam-projects-cover.webp`;
 
   // ACF fields — apne field group ke mutabiq names adjust karein
   const githubUrl = project?.projectDetails?.githuburl;
   const liveUrl = project?.projectDetails?.liveurl;
-  const tags: string[] = project?.tags?.nodes?.map((tag: any) => tag.name) || [];
+  const tags: string[] =
+    project?.tags?.nodes?.map((tag: any) => tag.name) || [];
 
   const jsonLdData = {
     "@context": "https://schema.org",
@@ -118,7 +120,8 @@ const ProjectDetail = ({ project }: Props) => {
                 <Link
                   href={liveUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener"
+                  title="Demo url"
                   className="px-5 py-2.5 bg-linear-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white text-sm font-bold rounded-xl shadow-[0_4px_25px_rgba(59,130,246,0.35)] transition-all"
                 >
                   Live Demo
@@ -128,7 +131,7 @@ const ProjectDetail = ({ project }: Props) => {
                 <Link
                   href={githubUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofollow noopener"
                   className="px-5 py-2.5 bg-gray-900/60 hover:bg-gray-800 border border-gray-800 text-sm font-bold text-gray-300 rounded-xl transition-all"
                 >
                   View Code

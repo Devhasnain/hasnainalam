@@ -13,13 +13,46 @@ const imageUrl = `${domain}/Hasnain-alam-og-image.webp`;
 export default function AboutPage() {
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "@id": `${pageUrl}/#profile`,
-    url: pageUrl,
-    name: title,
-    description,
-    isPartOf: { "@id": `${domain}/#website` },
-    mainEntity: { "@id": `${domain}/#person` },
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": `${pageUrl}/#profile`,
+        url: pageUrl,
+        name: title,
+        description,
+        isPartOf: { "@id": `${domain}/#website` },
+        mainEntity: { "@id": `${domain}/#person` },
+      },
+      {
+        "@type": "Person",
+        "@id": `${domain}/#person`,
+        name: "Hasnain Alam",
+        alternateName: [
+          "Hasnain",
+          "Hasnain Alam Developer",
+          "Hasnain Alam MERN Developer",
+          "Hasnain Alam Next.js Developer",
+        ],
+        url: domain,
+        image: `${domain}/Hasnain-alam.png`,
+        jobTitle: "Full-Stack MERN & Next.js Developer",
+        description:
+          "Full-Stack Developer specializing in MERN Stack, Next.js, React Native, Electron.js, NestJS, TypeScript, Node.js and MongoDB.",
+        knowsAbout: [
+          /* same array */
+        ],
+        hasOccupation: {
+          "@type": "Occupation",
+          name: "Full Stack Software Developer",
+        },
+        knowsLanguage: ["English", "Urdu"],
+        sameAs: [
+          "https://github.com/devhasnain",
+          "https://linkedin.com/in/devhasnain",
+          "https://fiverr.com/hasnainalam462",
+        ],
+      },
+    ],
   };
 
   return (
@@ -193,7 +226,7 @@ export default function AboutPage() {
                     native animation libraries and optimized list rendering to
                     avoid lag and memory leaks.
                   </p>
-                   <Link
+                  <Link
                     href={`/services/react-native-development`}
                     aria-label={`Read more about React native App Development service`}
                     className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1 group/btn mt-5"
@@ -215,7 +248,7 @@ export default function AboutPage() {
                     strict security practices like context isolation and
                     validated IPC communication between processes.
                   </p>
-                   <Link
+                  <Link
                     href={`/services/electron-desktop-development`}
                     aria-label={`Read more about Electron Desktop Development service`}
                     className="text-xs font-bold text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-1 group/btn mt-5"
