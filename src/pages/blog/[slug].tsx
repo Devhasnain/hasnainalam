@@ -19,6 +19,8 @@ const BlogDetail = ({ post }: Props) => {
 
   const pageUrl = `${domain}/blog/${post.slug}`;
   const cleanExcerpt = stripHtml(post?.excerpt);
+  const metaTitle = post?.postMetaFields?.metaTitle || post.title;
+  const metaDescription = post?.postMetaFields?.metaDescription;
   const imageUrl =
     post?.featuredImage?.node?.sourceUrl || `${domain}/Hasnain-alam.png`;
 
@@ -28,7 +30,7 @@ const BlogDetail = ({ post }: Props) => {
     "@id": `${pageUrl}/#article`,
     mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
     headline: post?.title,
-    description: cleanExcerpt,
+    description: metaDescription,
     image: imageUrl,
     datePublished: post?.date,
     dateModified: post?.modified || post?.date,
@@ -47,22 +49,22 @@ const BlogDetail = ({ post }: Props) => {
   return (
     <>
       <Head>
-        <title>{`${post.title} | Hasnain Alam Blog`}</title>
-        <meta name="description" content={cleanExcerpt} />
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={pageUrl} />
 
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={cleanExcerpt} />
+        <meta property="og:description" content={metaDescription} />
         <meta property="og:image" content={imageUrl} />
         <meta property="article:published_time" content={post?.date} />
         <meta property="article:author" content="Hasnain Alam" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
-        <meta name="twitter:description" content={cleanExcerpt} />
+        <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content={imageUrl} />
 
         <link rel="icon" href="/favicon.png" />
@@ -107,9 +109,13 @@ const BlogDetail = ({ post }: Props) => {
             <Image
               src={imageUrl}
               alt={
-                post?.featuredImage?.node?.altText ||
-                post?.title ||
-                "Hasnain Alam post image"
+                post?.featuredImage?.node?.altText || "Hasnain Alam post image"
+              }
+              title={
+                post?.featuredImage?.node?.title || "Hasnain Alam post image title"
+              }
+              aria-description={
+                post?.featuredImage?.node?.description || "Hasnain Alam post image description"
               }
               className="w-full h-full object-cover object-center"
               priority
@@ -122,7 +128,7 @@ const BlogDetail = ({ post }: Props) => {
             className={clsx(
               "prose",
               "pt-6",
-              "text-gray-300",
+              "text-gray-200",
               "font-light",
               "leading-relaxed",
               "space-y-6",
@@ -132,13 +138,14 @@ const BlogDetail = ({ post }: Props) => {
               "prose-h2:text-2xl",
               "prose-h2:pt-4",
               "prose-h3:text-xl",
-              "prose-h3:text-blue-400",
               "prose-p:text-sm",
               "sm:prose-p:text-base",
               "prose-p:leading-relaxed",
               "prose-strong:text-white",
               "prose-strong:font-semibold",
               "prose-a:text-white",
+              "prose-code:text-gray-100",
+              "prose-code:font-medium",
             )}
             dangerouslySetInnerHTML={{ __html: post?.content }}
           />
@@ -150,14 +157,14 @@ const BlogDetail = ({ post }: Props) => {
                   🎯
                 </div>
               </div>
-              <div>
+              <Link href={'/about'}>
                 <h4 className="text-sm font-bold text-white">
                   Written by Hasnain Alam
                 </h4>
-                <p className="text-xs text-gray-500">
-                  Full-Stack Multiplatform Architecture Specialist
+                <p className="text-xs text-gray-400">
+                  Full-Stack Mern & Next.js Developer
                 </p>
-              </div>
+              </Link>
             </div>
 
             <Link

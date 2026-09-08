@@ -1,4 +1,5 @@
 import axiosInstance from "@/services/axiosInstance";
+import { PhoneCall } from "lucide-react";
 import React, { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
@@ -79,10 +80,27 @@ export default function Contact() {
                   href="mailto:hasnainalam1166@gmail.com"
                   className="text-sm text-gray-300 hover:text-blue-400 transition-colors font-mono"
                 >
-                  contact@hasnainalam.com
+                  hasnainalam1166@gmail.com
                 </Link>
               </div>
             </div>
+            <div className="flex items-start space-x-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 font-mono text-sm">
+                    <PhoneCall size={16} />
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-gray-300">
+                      Whatsapp
+                    </h3>
+                    <Link
+                      href={`https://wa.me/message/FP45AINE2EQCB1`}
+                      className="text-sm text-gray-200 hover:text-blue-400 transition-colors font-mono"
+                      target="_blank"
+                    >
+                      Send a message
+                    </Link>
+                  </div>
+                </div>
 
             <div className="flex items-start space-x-4">
               <div className="p-3 bg-gray-950 border border-gray-900 rounded-xl text-cyan-400">

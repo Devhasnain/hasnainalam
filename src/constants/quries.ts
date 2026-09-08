@@ -72,6 +72,8 @@ export const queries = {
       node {
         sourceUrl
         altText
+        title
+        description
       }
     }
     categories {
@@ -85,6 +87,11 @@ export const queries = {
         name
         slug
       }
+    }
+
+    postMetaFields {
+      metaTitle
+      metaDescription
     }
   }
 }

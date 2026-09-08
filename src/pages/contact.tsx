@@ -1,4 +1,4 @@
-import { Mail, Zap } from "lucide-react";
+import { Mail, PhoneCall, Zap } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
@@ -12,7 +12,7 @@ const title =
 const description =
   "Get in touch with Hasnain Alam for freelance, remote, or full-time software engineering projects — MERN Stack, Next.js, React Native mobile apps, and Electron.js desktop software, worldwide.";
 const imageUrl = `${domain}/Hasnain-alam.png`;
-const contactEmail = "hasnainalam1166@gmail.com"; // confirm this is the correct, monitored address
+const contactEmail = "hasnainalam1166@gmail.com";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -98,7 +98,7 @@ export default function ContactPage() {
               Get In Touch
             </span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
             Hire a MERN Stack &amp; Next.js{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 via-cyan-300 to-white">
               Developer
@@ -133,6 +133,23 @@ export default function ContactPage() {
                       className="text-sm text-gray-200 hover:text-blue-400 transition-colors font-mono"
                     >
                       {contactEmail}
+                    </Link>
+                  </div>
+                </div>
+                 <div className="flex items-start space-x-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0 font-mono text-sm">
+                    <PhoneCall size={16} />
+                  </div>
+                  <div>
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500">
+                      Whatsapp
+                    </h3>
+                    <Link
+                      href={`https://wa.me/message/FP45AINE2EQCB1`}
+                      className="text-sm text-gray-200 hover:text-blue-400 transition-colors font-mono"
+                      target="_blank"
+                    >
+                      Send a message
                     </Link>
                   </div>
                 </div>

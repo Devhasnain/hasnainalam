@@ -6,7 +6,10 @@ import moment from "moment";
 
 type Props = {
   post: {
+    imageDescription: string;
+    alt: string;
     title: string;
+    imageTitle: string;
     image: string;
     category: string;
     date: string;
@@ -26,12 +29,13 @@ const BlogCard = ({ post }: Props) => {
 
         <Image
           src={post.image || "/api/placeholder/400/250"}
-          title={post.title}
-          alt={`${post.title} architectural concept blueprint`}
+          title={post?.imageTitle}
+          alt={`${post?.alt} architectural concept blueprint`}
           className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
           loading="lazy"
           width={400}
           height={400}
+          aria-description={post?.imageDescription}
         />
 
         {/* Absolute Floating Category Badge on Image */}

@@ -109,6 +109,9 @@ const Blog = ({ posts }: Props) => {
                     ...post,
                     readTime: getReadTime(post.excerpt),
                     image: post.featuredImage?.node?.sourceUrl || "",
+                    imageTitle:post.featuredImage?.node?.title || "",
+                    alt:post.featuredImage?.node?.altText || "",
+                    imageDescription:post.featuredImage?.node?.description || "",
                     category:
                       post.categories?.nodes[0]?.name || "Uncategorized",
                   }}
