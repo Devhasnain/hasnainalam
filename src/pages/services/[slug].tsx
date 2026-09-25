@@ -88,7 +88,7 @@ const ServiceDetail = ({ service }: Props) => {
         <meta name="twitter:description" content={service.metaDescription} />
         <meta name="twitter:image" content={imageUrl} />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
 
         <script
           type="application/ld+json"

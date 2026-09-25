@@ -80,7 +80,7 @@ export default function AboutPage() {
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={imageUrl} />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.icon" />
 
         <script
           type="application/ld+json"

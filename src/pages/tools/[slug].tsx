@@ -85,7 +85,7 @@ const ToolPage = ({ tool }: Props) => {
           name="twitter:image"
           content={`${domain}/Hasnain-alam-og-image.webp`}
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
 
         <script
           type="application/ld+json"

@@ -74,7 +74,7 @@ const Services = () => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={`${domain}/Hasnain-alam-services-cover.webp`} />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
 
         <script
           type="application/ld+json"

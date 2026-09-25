@@ -68,7 +68,7 @@ const Meta = () => {
         <meta name="theme-color" content="#0A0A0A" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
   )
