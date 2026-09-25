@@ -27,8 +27,8 @@ const Blog = ({ posts }: Props) => {
               MERN Stack &amp; Next.js Development Blog
             </h2>
             <p className="text-gray-300 text-base mt-3 max-w-xl font-light">
-              Practical tutorials and guides on MERN Stack, Next.js, React
-              Native, and Node.js development — covering performance,
+              Practical tutorials and guides on <b>MERN Stack</b>, <b>Next.js</b>, <b>React
+              Native</b>, and <b>Node.js development</b> covering performance,
               backend architecture, and real-world implementation.
             </p>
         </div>

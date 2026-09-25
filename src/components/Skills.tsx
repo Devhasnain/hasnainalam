@@ -22,9 +22,9 @@ const Skills = () => {
               MERN Stack &amp; Next.js Skills Proficiency
             </h2>
             <p className="text-gray-300 leading-relaxed font-light">
-              I work across the full MERN Stack and Next.js ecosystem —
-              React.js, Node.js, MongoDB, and TypeScript — along with React
-              Native for mobile and Electron.js for desktop applications.
+              I work across the <b>Full MERN Stack and Next.js</b> ecosystem{" "}
+              <b>React.js</b>, <b>Node.js</b>, <b>MongoDB</b>, and <b>TypeScript</b> along with <b>React
+              Native</b> for mobile and <b>Electron.js</b> for desktop applications.
             </p>
             <p className="text-gray-300 leading-relaxed font-light">
               Click on any category tab to explore my proficiency in each

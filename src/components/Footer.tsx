@@ -10,6 +10,8 @@ type Props = {
 };
 
 const serviceLinks = [
+  { name:"Mern Stack Development", href:"/services/mern-stack-development"},
+  { name: "Next js Website Development", href:"/services/nextjs-development"},
   { name: "Landing Page Development", href: "/services/landing-page-development" },
   { name: "Node.js Backend Development", href: "/services/nodejs-backend-development" },
   { name: "React Native App Development", href: "/services/react-native-development" },
@@ -36,7 +38,7 @@ const Footer = ({ className }: Props) => {
               loading="lazy"
             />
             <p className="text-gray-300 text-base leading-relaxed max-w-sm font-light">
-              Full-Stack MERN &amp; Next.js Developer building fast, scalable
+              <b>Full-Stack MERN &amp; Next.js Developer</b> building fast, scalable
               web, mobile, and desktop applications for businesses worldwide.
             </p>
             <SocialIcons/>
@@ -79,8 +81,8 @@ const Footer = ({ className }: Props) => {
           </div>
         </div>
 
-        <div className="text-gray-500 text-sm text-center font-light pt-8">
-          &copy; 2026 Hasnain Alam — Full-Stack MERN &amp; Next.js Developer.
+        <div className="text-gray-400 text-sm text-center font-light pt-8">
+          &copy; 2026 Hasnain Alam - <b>Full-Stack MERN &amp; Next.js Developer</b>.
           All rights reserved.
         </div>
       </div>

@@ -1,4 +1,3 @@
-import axiosInstance from "@/services/axiosInstance";
 import { PhoneCall } from "lucide-react";
 import React, { useState } from "react";
 import Link from "next/link";
@@ -47,10 +46,10 @@ export default function Contact() {
             Hire a MERN Stack &amp; Next.js Developer
           </h2>
           <p className="text-gray-300 leading-relaxed font-light">
-            Have a startup idea, SaaS product, mobile app, or desktop
-            application you&apos;d like to build? I work with businesses
-            worldwide as a MERN Stack, Next.js, React Native, and Electron.js
-            developer — share your project details and let&apos;s start
+            Have a <b>startup idea</b>, <b>SaaS product</b>, <b>mobile app</b>, or <b>desktop
+            application</b>{" "}you&apos;d like to build? I work with businesses
+            worldwide as a <b>MERN Stack</b>, <b>Next.js</b>, <b>React Native</b>, and <b>Electron.js
+            developer</b>{" "}share your project details and let&apos;s start
             building.
           </p>
 

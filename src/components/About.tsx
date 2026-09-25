@@ -22,15 +22,15 @@ const About = () => {
           </h2>
 
           <p className="text-gray-300 leading-relaxed font-light">
-            I&apos;m a Full-Stack Developer helping businesses worldwide build
+            I&apos;m a <b>Full-Stack Developer</b> helping businesses worldwide build
             fast, scalable applications with the{" "}
-            <span className="text-white font-medium">MERN Stack</span> and{" "}
-            <span className="text-white font-medium">Next.js</span>. Beyond
+            <b >MERN Stack</b> and{" "}
+            <b >Next.js</b>. Beyond
             web development, my core expertise extends to building robust,
             real-world cross-platform mobile apps with{" "}
-            <span className="text-white font-medium">React Native</span> and
-            secure, native desktop applications with{" "}
-            <span className="text-white font-medium">Electron.js</span> —
+            <b >React Native</b> and
+            secure, <b>native desktop applications</b> with{" "}
+            <b >Electron.js</b>{" "}
             giving clients a single developer who can ship across every
             platform.
           </p>

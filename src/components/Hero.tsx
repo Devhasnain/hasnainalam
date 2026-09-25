@@ -23,21 +23,14 @@ export default function Hero() {
 
           {/* Strategic Definition: What this Website Represents */}
           <p className="text-gray-300 text-md leading-relaxed max-w-2xl font-light">
-            I&apos;m a Full-Stack Developer specializing in the{" "}
-            <span className="text-white font-medium">
-              MERN Stack, Next.js &amp; TypeScript
-            </span>
-            , helping businesses worldwide build fast, scalable, SEO-friendly
-            web applications. I also build cross-platform mobile apps as a{" "}
-            <span className="text-white font-medium">
-              React Native developer
-            </span>{" "}
-            and native desktop software as an{" "}
-            <span className="text-white font-medium">
-              Electron.js developer
-            </span>{" "}
-            — turning ideas into production-ready products across every
-            platform. Available for freelance and full-time opportunities.
+            I&apos;m a <b>Full-Stack Developer</b> specializing in the{" "}
+            <b>MERN Stack, Next.js &amp; TypeScript</b>, helping businesses
+            worldwide build fast, scalable, SEO-friendly web applications. I
+            also build <b>cross-platform mobile apps</b> as a{" "}
+            <b>React Native developer</b> and <b>native desktop software</b> as
+            an <b>Electron.js developer</b> turning ideas into
+            production-ready products across every platform. Available for
+            freelance and full-time opportunities.
           </p>
 
           {/* Premium Call-to-Actions */}

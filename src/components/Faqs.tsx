@@ -20,8 +20,8 @@ const Faqs = () => {
           MERN Stack &amp; Next.js Developer FAQs
         </h2>
         <p className="text-gray-300 text-base mt-4 font-light">
-          Common questions about hiring a MERN Stack, Next.js, React Native, and
-          Electron.js developer — covering my process, tech stack, and approach
+          Common questions about <b>hiring a MERN Stack</b>, <b>Next.js</b>, <b>React Native</b>, and{" "}
+          <b>Electron.js developer</b> covering my process, tech stack, and approach
           to building production-ready applications.
         </p>
       </div>

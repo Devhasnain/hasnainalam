@@ -20,8 +20,8 @@ export default function Services() {
           MERN Stack &amp; Next.js Development Services
         </h2>
         <p className="text-gray-300 text-base max-w-2xl mt-4 font-light">
-          End-to-end MERN Stack, Next.js, React Native, and Electron.js
-          development for businesses worldwide — engineered for performance,
+          End-to-end <b>MERN Stack</b>, <b>Next.js</b>, <b>React Native</b>, and <b>Electron.js</b>{" "}
+          development for businesses worldwide engineered for performance,
           scalability, and seamless user experience across web, mobile, and
           desktop.
         </p>

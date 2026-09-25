@@ -21,8 +21,8 @@ export default function Projects({ projects }: Props) {
           Recent MERN Stack &amp; Next.js Projects
         </h2>
         <p className="text-gray-300 text-base max-w-2xl mt-4 font-light">
-          A selection of full-stack web, mobile, and desktop applications built
-          with the MERN Stack, Next.js, React Native, and Electron.js — each
+          A selection of <b>full-stack web</b>, <b>mobile</b>, and <b>desktop applications</b> built
+          with the <b>MERN Stack</b>, <b>Next.js</b>, <b>React Native</b>, and <b>Electron.js</b> each
           demonstrating clean architecture and production-ready code.
         </p>
       </div>
