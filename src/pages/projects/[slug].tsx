@@ -148,7 +148,7 @@ const ProjectDetail = ({ project }: Props) => {
                 project?.title ||
                 "Hasnain Alam project image"
               }
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-contain object-center"
               priority
               fill
               sizes="(max-width: 768px) 100vw, 800px"
